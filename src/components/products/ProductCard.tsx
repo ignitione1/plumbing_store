@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 
 interface ProductCardProps {
   id: string;
@@ -23,23 +20,16 @@ export function ProductCard({
   brand,
   inStock,
 }: ProductCardProps) {
-  const discount = oldPrice ? Math.round((1 - price / oldPrice) * 100) : 0;
-
   return (
-    <div className="bg-card rounded-lg border border-border card-hover overflow-hidden group">
-      {/* Image container */}
-      <Link to={`/product/${id}`} className="block relative aspect-square overflow-hidden bg-muted">
+    <Link to={`/product/${id}`} className="product-card block">
+      {/* Image */}
+      <div className="aspect-square bg-muted/30 flex items-center justify-center p-4">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+          className="max-h-full max-w-full object-contain"
         />
-        {discount > 0 && (
-          <Badge className="absolute top-3 left-3 bg-accent text-accent-foreground">
-            -{discount}%
-          </Badge>
-        )}
-      </Link>
+      </div>
 
       {/* Content */}
       <div className="p-4">
@@ -49,45 +39,27 @@ export function ProductCard({
         </p>
 
         {/* Title */}
-        <Link to={`/product/${id}`}>
-          <h3 className="font-medium text-foreground leading-tight mb-3 line-clamp-2 hover:text-primary transition-colors min-h-[2.5rem]">
-            {title}
-          </h3>
-        </Link>
+        <h3 className="text-sm font-medium text-foreground leading-snug mb-3 line-clamp-2 min-h-[2.5rem]">
+          {title}
+        </h3>
 
-        {/* Stock status */}
-        <div className="mb-3">
+        {/* Stock */}
+        <div className="mb-2">
           {inStock ? (
-            <span className="badge-stock badge-stock-available">
-              В наличии
-            </span>
+            <span className="badge-stock badge-in-stock">В наличии</span>
           ) : (
-            <span className="badge-stock badge-stock-unavailable">
-              Под заказ
-            </span>
+            <span className="badge-stock badge-out-of-stock">Под заказ</span>
           )}
         </div>
 
         {/* Price */}
-        <div className="flex items-baseline gap-2 mb-4">
-          <span className="text-xl font-bold text-foreground">
-            {price.toLocaleString('ru-RU')} ₽
-          </span>
+        <div className="flex items-baseline gap-2">
+          <span className="price">{price.toLocaleString('ru-RU')} ₽</span>
           {oldPrice && (
-            <span className="text-sm text-muted-foreground line-through">
-              {oldPrice.toLocaleString('ru-RU')} ₽
-            </span>
+            <span className="price-old">{oldPrice.toLocaleString('ru-RU')} ₽</span>
           )}
         </div>
-
-        {/* Actions */}
-        <div className="flex gap-2">
-          <Button className="flex-1 btn-primary" size="sm">
-            <ShoppingCart className="h-4 w-4 mr-2" />
-            В корзину
-          </Button>
-        </div>
       </div>
-    </div>
+    </Link>
   );
 }

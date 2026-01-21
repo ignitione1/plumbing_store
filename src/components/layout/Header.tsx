@@ -1,111 +1,141 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MapPin, ShoppingCart } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Menu, X, Phone, Search } from 'lucide-react';
 
 const navigation = [
-  { name: 'Главная', href: '/' },
   { name: 'Каталог', href: '/catalog' },
   { name: 'О магазине', href: '/about' },
   { name: 'Доставка и оплата', href: '/delivery' },
+  { name: 'Где купить', href: '/contacts' },
   { name: 'Контакты', href: '/contacts' },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
 
   return (
-    <header className="bg-card border-b border-border sticky top-0 z-50">
-      {/* Top bar */}
-      <div className="bg-primary text-primary-foreground">
-        <div className="container-main py-2">
-          <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center gap-6">
-              <a href="tel:+78452123456" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                <Phone className="h-4 w-4" />
-                <span>+7 (8452) 12-34-56</span>
-              </a>
-              <div className="hidden md:flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
-                <span>г. Саратов, ул. Большая Горная</span>
-              </div>
-            </div>
-            <div className="hidden sm:block">
-              <span>Пн-Пт: 9:00-18:00, Сб: 10:00-15:00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main header */}
-      <div className="container-main py-4">
-        <div className="flex items-center justify-between">
+    <header className="bg-background sticky top-0 z-50 border-b border-border">
+      <div className="container-main">
+        {/* Top row: Logo, Search, Phone */}
+        <div className="hidden lg:flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">С</span>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-foreground">Сантехникъ</span>
-              <p className="text-xs text-muted-foreground">Сантехника в Саратове</p>
+          <Link to="/" className="flex-shrink-0">
+            <div className="flex items-center gap-2">
+              <div className="w-12 h-12 bg-primary rounded flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-2xl">С</span>
+              </div>
+              <div>
+                <span className="text-2xl font-medium text-foreground tracking-tight">САНТЕХНИКЪ</span>
+              </div>
             </div>
           </Link>
 
-          {/* Desktop navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`link-nav text-sm font-medium ${
-                  location.pathname === item.href ? 'text-primary' : ''
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Actions */}
-          <div className="flex items-center gap-4">
-            <Button variant="outline" size="icon" className="hidden sm:flex">
-              <ShoppingCart className="h-5 w-5" />
-            </Button>
-            <Button className="hidden sm:flex btn-accent">
-              Заказать звонок
-            </Button>
-            
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="lg:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+          {/* Search */}
+          <div className="flex-1 max-w-lg mx-8">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Поиск по сайту"
+                className="search-input pr-12"
+              />
+              <button className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors">
+                <Search className="h-5 w-5" />
+              </button>
+            </div>
           </div>
+
+          {/* Phone */}
+          <a 
+            href="tel:+78452123456" 
+            className="flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
+          >
+            <Phone className="h-5 w-5" />
+            <span>8 (8452) 12-34-56</span>
+          </a>
         </div>
 
-        {/* Mobile navigation */}
-        {mobileMenuOpen && (
-          <nav className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
-            <div className="flex flex-col gap-3">
-              {navigation.map((item) => (
+        {/* Navigation row */}
+        <nav className="hidden lg:block border-t border-border">
+          <ul className="flex items-center gap-8 py-3">
+            {navigation.map((item) => (
+              <li key={item.name}>
                 <Link
-                  key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium py-2 px-3 rounded-md transition-colors ${
-                    location.pathname === item.href 
-                      ? 'bg-primary/10 text-primary' 
-                      : 'hover:bg-muted'
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
+                  className={`nav-link ${location.pathname === item.href ? 'active' : ''}`}
                 >
                   {item.name}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Mobile header */}
+        <div className="flex lg:hidden items-center justify-between py-3">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="p-2 text-foreground"
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+
+          <Link to="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">С</span>
+            </div>
+            <span className="text-lg font-medium text-foreground">САНТЕХНИКЪ</span>
+          </Link>
+
+          <button
+            onClick={() => setSearchOpen(!searchOpen)}
+            className="p-2 text-foreground"
+          >
+            <Search className="h-5 w-5" />
+          </button>
+        </div>
+
+        {/* Mobile search */}
+        {searchOpen && (
+          <div className="lg:hidden pb-3">
+            <input
+              type="text"
+              placeholder="Поиск по сайту"
+              className="search-input w-full"
+              autoFocus
+            />
+          </div>
+        )}
+
+        {/* Mobile navigation */}
+        {mobileMenuOpen && (
+          <nav className="lg:hidden border-t border-border py-4">
+            <ul className="space-y-1">
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.href}
+                    className={`block py-2 px-3 rounded text-sm font-medium uppercase ${
+                      location.pathname === item.href 
+                        ? 'bg-primary/10 text-primary' 
+                        : 'text-foreground hover:bg-muted'
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
               ))}
+            </ul>
+            <div className="mt-4 pt-4 border-t border-border">
+              <a 
+                href="tel:+78452123456" 
+                className="flex items-center gap-2 px-3 text-foreground font-medium"
+              >
+                <Phone className="h-4 w-4" />
+                <span>8 (8452) 12-34-56</span>
+              </a>
             </div>
           </nav>
         )}

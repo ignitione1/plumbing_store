@@ -1,91 +1,67 @@
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 
 const Contacts = () => {
   return (
     <Layout>
-      {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container-main">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Контакты</h1>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl">
-            Свяжитесь с нами любым удобным способом. Мы всегда рады помочь 
-            с выбором сантехники и ответить на ваши вопросы.
-          </p>
+      {/* Breadcrumb */}
+      <div className="border-b border-border">
+        <div className="container-main py-3">
+          <nav className="text-sm text-muted-foreground">
+            <Link to="/" className="hover:text-primary transition-colors">Главная</Link>
+            <span className="mx-2">/</span>
+            <span className="text-foreground">Контакты</span>
+          </nav>
         </div>
-      </section>
+      </div>
 
-      <section className="py-16 md:py-20">
-        <div className="container-main">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact info */}
-            <div>
-              <h2 className="section-title mb-8">Наши контакты</h2>
+      <div className="container-main py-8">
+        <h1 className="text-2xl font-medium text-foreground mb-6">Контакты</h1>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* Contact info */}
+          <div>
+            <div className="border border-border rounded p-6 mb-6">
+              <h2 className="font-medium text-foreground mb-4 uppercase text-sm">Магазин «Сантехникъ»</h2>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-semibold mb-1">Телефон</h3>
-                    <a 
-                      href="tel:+78452123456" 
-                      className="text-lg text-primary hover:underline"
-                    >
-                      +7 (8452) 12-34-56
+                    <div className="text-sm text-muted-foreground">Телефон</div>
+                    <a href="tel:+78452123456" className="text-foreground hover:text-primary transition-colors">
+                      8 (8452) 12-34-56
                     </a>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Звоните в рабочее время
-                    </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-semibold mb-1">Email</h3>
-                    <a 
-                      href="mailto:info@santehnik-saratov.ru" 
-                      className="text-lg text-primary hover:underline"
-                    >
+                    <div className="text-sm text-muted-foreground">Email</div>
+                    <a href="mailto:info@santehnik-saratov.ru" className="text-foreground hover:text-primary transition-colors">
                       info@santehnik-saratov.ru
                     </a>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Ответим в течение рабочего дня
-                    </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-primary" />
-                  </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-semibold mb-1">Адрес магазина</h3>
-                    <p className="text-lg">г. Саратов, ул. Большая Горная</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Удобная парковка для клиентов
-                    </p>
+                    <div className="text-sm text-muted-foreground">Адрес</div>
+                    <div className="text-foreground">г. Саратов, ул. Большая Горная</div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="h-5 w-5 text-primary" />
-                  </div>
+                <div className="flex items-start gap-3">
+                  <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-semibold mb-1">Режим работы</h3>
-                    <div className="space-y-1">
-                      <p>Понедельник — Пятница: 9:00 — 18:00</p>
-                      <p>Суббота: 10:00 — 15:00</p>
-                      <p className="text-muted-foreground">Воскресенье: выходной</p>
+                    <div className="text-sm text-muted-foreground">Режим работы</div>
+                    <div className="text-foreground">
+                      Пн-Пт: 9:00 — 18:00<br />
+                      Сб: 10:00 — 15:00<br />
+                      <span className="text-muted-foreground">Вс: выходной</span>
                     </div>
                   </div>
                 </div>
@@ -93,76 +69,40 @@ const Contacts = () => {
             </div>
 
             {/* Contact form */}
-            <div>
-              <h2 className="section-title mb-8">Напишите нам</h2>
-              
-              <form className="bg-card rounded-lg border border-border p-6 md:p-8">
-                <div className="space-y-5">
-                  <div>
-                    <Label htmlFor="name">Ваше имя</Label>
-                    <Input 
-                      id="name" 
-                      placeholder="Иван Иванов" 
-                      className="mt-1.5"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="phone">Телефон</Label>
-                    <Input 
-                      id="phone" 
-                      type="tel" 
-                      placeholder="+7 (___) ___-__-__" 
-                      className="mt-1.5"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="email">Email</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="example@mail.ru" 
-                      className="mt-1.5"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message">Сообщение</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Опишите ваш вопрос или запрос..." 
-                      rows={5}
-                      className="mt-1.5"
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full btn-accent" size="lg">
-                    <Send className="h-4 w-4 mr-2" />
-                    Отправить сообщение
-                  </Button>
-
-                  <p className="text-xs text-muted-foreground text-center">
-                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-                  </p>
+            <div className="border border-border rounded p-6">
+              <h2 className="font-medium text-foreground mb-4 uppercase text-sm">Напишите нам</h2>
+              <form className="space-y-4">
+                <div>
+                  <label className="text-sm text-muted-foreground block mb-1">Ваше имя</label>
+                  <input type="text" className="search-input w-full" placeholder="Иван Иванов" />
                 </div>
+                <div>
+                  <label className="text-sm text-muted-foreground block mb-1">Телефон</label>
+                  <input type="tel" className="search-input w-full" placeholder="+7 (___) ___-__-__" />
+                </div>
+                <div>
+                  <label className="text-sm text-muted-foreground block mb-1">Сообщение</label>
+                  <textarea className="search-input w-full h-24 resize-none" placeholder="Ваш вопрос..." />
+                </div>
+                <button type="submit" className="btn-primary w-full">
+                  Отправить
+                </button>
               </form>
             </div>
           </div>
 
-          {/* Map placeholder */}
-          <div className="mt-12">
-            <h2 className="section-title mb-6">Как нас найти</h2>
-            <div className="bg-muted rounded-lg h-80 flex items-center justify-center border border-border">
+          {/* Map */}
+          <div>
+            <div className="bg-muted rounded border border-border h-96 flex items-center justify-center">
               <div className="text-center text-muted-foreground">
-                <MapPin className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                <p>Карта будет отображена здесь</p>
-                <p className="text-sm">г. Саратов, ул. Большая Горная</p>
+                <MapPin className="h-10 w-10 mx-auto mb-3 opacity-50" />
+                <p className="text-sm">Карта</p>
+                <p className="text-xs">г. Саратов, ул. Большая Горная</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };

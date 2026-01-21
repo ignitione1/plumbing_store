@@ -17,25 +17,18 @@ const iconMap: Record<string, React.ElementType> = {
   pump: Cog,
 };
 
-export function CategoryCard({ id, name, icon, productCount }: CategoryCardProps) {
+export function CategoryCard({ id, name, icon }: CategoryCardProps) {
   const IconComponent = iconMap[icon] || Droplets;
 
   return (
     <Link
       to={`/catalog?category=${id}`}
-      className="group bg-card rounded-lg border border-border p-6 card-hover flex flex-col items-center text-center"
+      className="category-card flex flex-col items-center"
     >
-      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-        <IconComponent className="h-8 w-8 text-primary" />
+      <div className="w-full aspect-square flex items-center justify-center bg-muted/50 rounded mb-3">
+        <IconComponent className="h-16 w-16 text-muted-foreground" strokeWidth={1} />
       </div>
-      <h3 className="font-medium text-foreground mb-1 group-hover:text-primary transition-colors">
-        {name}
-      </h3>
-      {productCount !== undefined && (
-        <p className="text-sm text-muted-foreground">
-          {productCount} товаров
-        </p>
-      )}
+      <h3 className="category-card-title">{name}</h3>
     </Link>
   );
 }
