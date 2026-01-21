@@ -16,13 +16,13 @@ const About = () => {
       </div>
 
       <div className="container-main py-8">
-        <h1 className="text-2xl font-medium text-foreground mb-6">О магазине «Сантехникъ»</h1>
+        <h1 className="text-2xl font-medium text-foreground mb-6">О магазине «СантехникЪ»</h1>
 
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <div className="prose prose-sm max-w-none text-muted-foreground">
               <p className="mb-4 leading-relaxed">
-                Магазин «Сантехникъ» — это специализированный магазин сантехнической продукции 
+                Магазин «СантехникЪ» — это специализированный магазин сантехнической продукции 
                 в Саратове. Мы работаем на рынке более 10 лет, предоставляя нашим клиентам 
                 широкий выбор качественной продукции для систем водоснабжения и отопления.
               </p>

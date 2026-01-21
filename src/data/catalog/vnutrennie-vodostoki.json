@@ -1,0 +1,621 @@
+{
+  "name": "Системы для внутренних водостоков",
+  "image_url": "/images/categories/vnutrennie-vodostoki.png",
+  "subcategories": [
+    {
+      "name": "Система Синикон Rain Flow для внутренних водостоков",
+      "image_url": "/images/subcategories/sinikon-rain-flow.png",
+      "productGroups": [
+        {
+          "groupName": "Трубы Rain Flow 60 Ø110",
+          "commonSpecs": {
+            "type": "Труба однораструбная Rain Flow 60",
+            "diameter_mm": 110,
+            "wall_thickness_mm": "3.4",
+            "image_url": "/images/sinikon-rainflow-tube-60.jpg"
+          },
+          "items": [
+            {
+              "article": "500083.F",
+              "length_mm": 250,
+              "pack_qty": 30
+            },
+            {
+              "article": "500085.F",
+              "length_mm": 500,
+              "pack_qty": 30
+            },
+            {
+              "article": "500089.F",
+              "length_mm": 1000,
+              "pack_qty": 15
+            },
+            {
+              "article": "500091.F",
+              "length_mm": 1500,
+              "pack_qty": 15
+            },
+            {
+              "article": "500093.F",
+              "length_mm": 2000,
+              "pack_qty": 15
+            },
+            {
+              "article": "500095.F",
+              "length_mm": 8000,
+              "pack_qty": 15
+            },
+            {
+              "article": "500097.F",
+              "length_mm": 6000,
+              "pack_qty": 15
+            }
+          ],
+          "description_short": "Труба однораструбная Rain Flow 60 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 3.4 мм СИНИКОН.",
+          "description_full": "Труба однораструбная Rain Flow 60 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 3.4 мм СИНИКОН. Доступны длины: 250, 500, 1000, 1500, 2000, 6000, 8000 мм.",
+          "seo_slug": "truby-rain-flow-60-o110",
+          "seo_title": "Трубы Rain Flow 60 Ø110 — Система Синикон Rain Flow для в…",
+          "seo_meta_description": "Труба однораструбная Rain Flow 60 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 3."
+        },
+        {
+          "groupName": "Трубы Rain Flow 100 Ø110",
+          "commonSpecs": {
+            "type": "Труба однораструбная Rain Flow 100",
+            "diameter_mm": 110,
+            "wall_thickness_mm": "5.3",
+            "image_url": "/images/sinikon-rainflow-tube-100.jpg"
+          },
+          "items": [
+            {
+              "article": "500085.F.5.3",
+              "length_mm": 500,
+              "pack_qty": 15
+            },
+            {
+              "article": "500089.F5.3",
+              "length_mm": 1000,
+              "pack_qty": 15
+            },
+            {
+              "article": "500091.E5.3",
+              "length_mm": 1500,
+              "pack_qty": 15
+            },
+            {
+              "article": "500093.E5.3",
+              "length_mm": 2000,
+              "pack_qty": 10
+            },
+            {
+              "article": "500095.F.5.3",
+              "length_mm": 3000,
+              "pack_qty": 5
+            },
+            {
+              "article": "500097.E5.3",
+              "length_mm": 6000,
+              "pack_qty": 5
+            }
+          ],
+          "description_short": "Труба однораструбная Rain Flow 100 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 5.3 мм СИНИКОН.",
+          "description_full": "Труба однораструбная Rain Flow 100 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 5.3 мм СИНИКОН. Доступны длины: 500, 1000, 1500, 2000, 3000, 6000 мм.",
+          "seo_slug": "truby-rain-flow-100-o110",
+          "seo_title": "Трубы Rain Flow 100 Ø110 — Система Синикон Rain Flow для …",
+          "seo_meta_description": "Труба однораструбная Rain Flow 100 для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм. толщина стенки 5."
+        },
+        {
+          "groupName": "Отводы Rain Flow Ø110",
+          "commonSpecs": {
+            "type": "Отвод",
+            "diameter_mm": 110,
+            "image_url": "/images/sinikon-rainflow-elbow.jpg"
+          },
+          "items": [
+            {
+              "article": "504053.F",
+              "angle_deg": 45,
+              "pack_qty": 20
+            },
+            {
+              "article": "504059.F",
+              "angle_deg": 87,
+              "pack_qty": 20
+            }
+          ],
+          "description_short": "Отвод для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "description_full": "Отвод для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "seo_slug": "otvody-rain-flow-o110",
+          "seo_title": "Отводы Rain Flow Ø110 — Система Синикон Rain Flow для вну…",
+          "seo_meta_description": "Отвод для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН."
+        },
+        {
+          "groupName": "Ревизии Rain Flow",
+          "commonSpecs": {
+            "type": "Ревизия",
+            "image_url": "/images/sinikon-rainflow-revision.jpg"
+          },
+          "items": [
+            {
+              "article": "516007.F",
+              "diameter_mm": 110,
+              "pack_qty": 10
+            }
+          ],
+          "description_short": "Ревизия для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "description_full": "Ревизия для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "seo_slug": "revizii-rain-flow",
+          "seo_title": "Ревизии Rain Flow — Система Синикон Rain Flow для внутрен…",
+          "seo_meta_description": "Ревизия для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН."
+        },
+        {
+          "groupName": "Тройники Rain Flow Ø110",
+          "commonSpecs": {
+            "type": "Тройник",
+            "diameter_mm": 110,
+            "image_url": "/images/sinikon-rainflow-tee.jpg"
+          },
+          "items": [
+            {
+              "article": "508025.F",
+              "diameters_mm": "110/110",
+              "angle_deg": 45,
+              "pack_qty": 12
+            },
+            {
+              "article": "508029.F",
+              "diameters_mm": "110/110",
+              "angle_deg": 87,
+              "pack_qty": 10
+            }
+          ],
+          "description_short": "Тройник для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "description_full": "Тройник для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "seo_slug": "troyniki-rain-flow-o110",
+          "seo_title": "Тройники Rain Flow Ø110 — Система Синикон Rain Flow для в…",
+          "seo_meta_description": "Тройник для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН."
+        },
+        {
+          "groupName": "Переходы на фланец Rain Flow",
+          "commonSpecs": {
+            "type": "Переход на фланец чуг/сталь",
+            "diameter_mm": 110,
+            "image_url": "/images/sinikon-rainflow-flange-transition.jpg"
+          },
+          "items": [
+            {
+              "article": "S1100600.F",
+              "wall_thickness_mm": "3.4",
+              "length_mm": "550±30",
+              "model": "A",
+              "pack_qty": 1
+            },
+            {
+              "article": "S1100600.F.5.3",
+              "wall_thickness_mm": "5.3",
+              "length_mm": "550±30",
+              "model": "B",
+              "pack_qty": 1
+            }
+          ],
+          "description_short": "Переход на фланец чуг/сталь для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "description_full": "Переход на фланец чуг/сталь для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "seo_slug": "perehody-na-flanet-rain-flow",
+          "seo_title": "Переходы на фланец Rain Flow — Система Синикон Rain Flow …",
+          "seo_meta_description": "Переход на фланец чуг/сталь для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН."
+        },
+        {
+          "groupName": "Патрубки компенсационные Rain Flow",
+          "commonSpecs": {
+            "type": "Патрубок компенсационный",
+            "image_url": "/images/sinikon-rainflow-compensating-pipe.jpg"
+          },
+          "items": [
+            {
+              "article": "531011.F",
+              "diameter_mm": 110,
+              "pack_qty": 15
+            }
+          ],
+          "description_short": "Патрубок компенсационный для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "description_full": "Патрубок компенсационный для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "seo_slug": "patrubki-kompensationnye-rain-flow",
+          "seo_title": "Патрубки компенсационные Rain Flow — Система Синикон Rain…",
+          "seo_meta_description": "Патрубок компенсационный для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН."
+        },
+        {
+          "groupName": "Муфты ремонтные Rain Flow",
+          "commonSpecs": {
+            "type": "Муфта ремонтная",
+            "image_url": "/images/sinikon-rainflow-repair-coupling.jpg"
+          },
+          "items": [
+            {
+              "article": "526007.F",
+              "diameter_mm": 110,
+              "pack_qty": 20
+            }
+          ],
+          "description_short": "Муфта ремонтная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "description_full": "Муфта ремонтная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "seo_slug": "mufty-remontnye-rain-flow",
+          "seo_title": "Муфты ремонтные Rain Flow — Система Синикон Rain Flow для…",
+          "seo_meta_description": "Муфта ремонтная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН."
+        },
+        {
+          "groupName": "Крестовины Rain Flow",
+          "commonSpecs": {
+            "type": "Крестовина одноплоскостная",
+            "image_url": "/images/sinikon-rainflow-cross.jpg"
+          },
+          "items": [
+            {
+              "article": "506016.F",
+              "diameters_mm": "110/110/110",
+              "angle_deg": 45,
+              "pack_qty": 9
+            }
+          ],
+          "description_short": "Крестовина одноплоскостная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "description_full": "Крестовина одноплоскостная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "seo_slug": "krestoviny-rain-flow",
+          "seo_title": "Крестовины Rain Flow — Система Синикон Rain Flow для внут…",
+          "seo_meta_description": "Крестовина одноплоскостная для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН."
+        },
+        {
+          "groupName": "Заглушки Rain Flow",
+          "commonSpecs": {
+            "type": "Заглушка",
+            "image_url": "/images/sinikon-rainflow-plug.jpg"
+          },
+          "items": [
+            {
+              "article": "524007.F",
+              "diameter_mm": 110,
+              "pack_qty": 40
+            }
+          ],
+          "description_short": "Заглушка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "description_full": "Заглушка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН.",
+          "seo_slug": "zagluski-rain-flow",
+          "seo_title": "Заглушки Rain Flow — Система Синикон Rain Flow для внутре…",
+          "seo_meta_description": "Заглушка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. СИНИКОН."
+        },
+        {
+          "groupName": "Кровельные воронки Rain Flow",
+          "commonSpecs": {
+            "type": "Кровельная воронка",
+            "diameter_mm": 110,
+            "image_url": "/images/sinikon-rainflow-roof-funnel.jpg"
+          },
+          "items": [
+            {
+              "article": "TN.01.110.600",
+              "length_mm": 600,
+              "pack_qty": 1
+            },
+            {
+              "article": "T.01.110.600.3",
+              "name": "Кровельная воронка с электроподогревом",
+              "length_mm": 600,
+              "power_w": 15,
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-rainflow-roof-funnel-heated.jpg"
+            }
+          ],
+          "description_short": "Кровельная воронка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "description_full": "Кровельная воронка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН. Доступны длины: 600 мм.",
+          "seo_slug": "krovelnye-voronki-rain-flow",
+          "seo_title": "Кровельные воронки Rain Flow — Система Синикон Rain Flow …",
+          "seo_meta_description": "Кровельная воронка для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН."
+        },
+        {
+          "groupName": "Компрессионные фитинги Rain Flow",
+          "commonSpecs": {
+            "type": "Компрессионный фитинг",
+            "diameter_mm": 110
+          },
+          "items": [
+            {
+              "article": "GR.514.110.FR",
+              "name": "Компрессионная ревизия",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-rainflow-compression-revision.jpg"
+            },
+            {
+              "article": "MDL009PS",
+              "name": "Компрессионный отвод",
+              "angle_deg": 90,
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-rainflow-compression-elbow.jpg"
+            },
+            {
+              "article": "MDT009PS",
+              "name": "Компрессионный тройник",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-rainflow-compression-tee.jpg"
+            }
+          ],
+          "description_short": "Компрессионный фитинг для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "description_full": "Компрессионный фитинг для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН.",
+          "seo_slug": "kompressionnye-fitingi-rain-flow",
+          "seo_title": "Компрессионные фитинги Rain Flow — Система Синикон Rain F…",
+          "seo_meta_description": "Компрессионный фитинг для Системы для внутренних водостоков, Система Синикон Rain Flow для внутренних водостоков. Ø110 мм СИНИКОН."
+        }
+      ]
+    },
+    {
+      "name": "Трапы канализационные",
+      "image_url": "/images/subcategories/trapy-kanalizacionnye.jpg",
+      "productGroups": [
+        {
+          "groupName": "Трапы нерегулируемые с вертикальным выпуском",
+          "commonSpecs": {
+            "type": "Трап нерегулируемый с вертикальным выпуском"
+          },
+          "items": [
+            {
+              "article": "10.D.050.N.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-metal.jpg"
+            },
+            {
+              "article": "15.D.050.N.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-metal.jpg"
+            },
+            {
+              "article": "10.D.050.N.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-plastic.jpg"
+            },
+            {
+              "article": "15.D.050.N.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-plastic.jpg"
+            },
+            {
+              "article": "15.D.110.N.M",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-metal.jpg"
+            },
+            {
+              "article": "15.D.110.N.P",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-plastic.jpg"
+            }
+          ],
+          "description_short": "Трап нерегулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "description_full": "Трап нерегулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "seo_slug": "trapy-nereguliruemye-s-vertikalnym-vypuskom",
+          "seo_title": "Трапы нерегулируемые с вертикальным выпуском — Трапы кана…",
+          "seo_meta_description": "Трап нерегулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН."
+        },
+        {
+          "groupName": "Трапы регулируемые с вертикальным выпуском",
+          "commonSpecs": {
+            "type": "Трап регулируемый с вертикальным выпуском"
+          },
+          "items": [
+            {
+              "article": "10.D.050.R.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-metal.jpg"
+            },
+            {
+              "article": "15.D.050.R.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-metal.jpg"
+            },
+            {
+              "article": "10.D.050.R.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-plastic.jpg"
+            },
+            {
+              "article": "15.D.050.R.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-plastic.jpg"
+            },
+            {
+              "article": "15.D.110.R.M",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-metal.jpg"
+            },
+            {
+              "article": "15.D.110.R.P",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-vertical-adjustable-plastic.jpg"
+            }
+          ],
+          "description_short": "Трап регулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "description_full": "Трап регулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "seo_slug": "trapy-reguliruemye-s-vertikalnym-vypuskom",
+          "seo_title": "Трапы регулируемые с вертикальным выпуском — Трапы канали…",
+          "seo_meta_description": "Трап регулируемый с вертикальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН."
+        },
+        {
+          "groupName": "Трапы нерегулируемые с горизонтальным выпуском",
+          "commonSpecs": {
+            "type": "Трап нерегулируемый с горизонтальным выпуском"
+          },
+          "items": [
+            {
+              "article": "10.B.050.N.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-metal.jpg"
+            },
+            {
+              "article": "15.B.050.N.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-metal.jpg"
+            },
+            {
+              "article": "10.B.050.N.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-plastic.jpg"
+            },
+            {
+              "article": "15.B.050.N.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-plastic.jpg"
+            },
+            {
+              "article": "15.B.110.N.M",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-metal.jpg"
+            },
+            {
+              "article": "15.B.110.N.P",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-plastic.jpg"
+            }
+          ],
+          "description_short": "Трап нерегулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "description_full": "Трап нерегулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "seo_slug": "trapy-nereguliruemye-s-gorizontalnym-vypuskom",
+          "seo_title": "Трапы нерегулируемые с горизонтальным выпуском — Трапы ка…",
+          "seo_meta_description": "Трап нерегулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН."
+        },
+        {
+          "groupName": "Трапы регулируемые с горизонтальным выпуском",
+          "commonSpecs": {
+            "type": "Трап регулируемый с горизонтальным выпуском"
+          },
+          "items": [
+            {
+              "article": "10.B.050.R.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-metal.jpg"
+            },
+            {
+              "article": "15.B.050.R.M",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-metal.jpg"
+            },
+            {
+              "article": "10.B.050.R.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "100x100",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-plastic.jpg"
+            },
+            {
+              "article": "15.B.050.R.P",
+              "diameter_mm": 50,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-plastic.jpg"
+            },
+            {
+              "article": "15.B.110.R.M",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "металл",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-metal.jpg"
+            },
+            {
+              "article": "15.B.110.R.P",
+              "diameter_mm": 110,
+              "grate_size_mm": "150x150",
+              "color": "белый/серый",
+              "grate_material": "пластик",
+              "pack_qty": 1,
+              "image_url": "/images/sinikon-trap-horizontal-adjustable-plastic.jpg"
+            }
+          ],
+          "description_short": "Трап регулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "description_full": "Трап регулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН.",
+          "seo_slug": "trapy-reguliruemye-s-gorizontalnym-vypuskom",
+          "seo_title": "Трапы регулируемые с горизонтальным выпуском — Трапы кана…",
+          "seo_meta_description": "Трап регулируемый с горизонтальным выпуском для Системы для внутренних водостоков, Трапы канализационные. СИНИКОН."
+        }
+      ]
+    }
+  ]
+}

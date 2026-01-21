@@ -57,7 +57,7 @@ const Delivery = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Самовывоз</h3>
                     <p className="text-sm text-muted-foreground mb-2">
-                      Забрать заказ из магазина по адресу: г. Саратов, ул. Большая Горная
+                      Забрать заказ из магазина по адресу: г. Саратов, ул. Большая Горная, 290
                     </p>
                     <p className="text-sm text-primary">Бесплатно</p>
                   </div>
@@ -122,8 +122,8 @@ const Delivery = () => {
               <p className="text-sm text-muted-foreground mb-2">
                 Работаем с организациями и ИП. Предоставляем полный пакет документов.
               </p>
-              <a href="tel:+78452123456" className="text-sm text-primary hover:underline">
-                Позвоните для оформления: 8 (8452) 12-34-56
+              <a href="tel:+78452477477" className="text-sm text-primary hover:underline">
+                Позвоните для оформления: 8 (8452) 47-74-77
               </a>
             </div>
           </div>

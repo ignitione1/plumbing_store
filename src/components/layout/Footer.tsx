@@ -52,23 +52,8 @@ export function Footer() {
             <h3 className="font-medium text-foreground mb-4 uppercase text-sm">Категории</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/catalog?category=pipes" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Трубы и фитинги
-                </Link>
-              </li>
-              <li>
-                <Link to="/catalog?category=valves" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Запорная арматура
-                </Link>
-              </li>
-              <li>
-                <Link to="/catalog?category=radiators" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Радиаторы
-                </Link>
-              </li>
-              <li>
-                <Link to="/catalog?category=boilers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Водонагреватели
+                <Link to="/catalog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Все категории
                 </Link>
               </li>
             </ul>
@@ -80,20 +65,20 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <a href="tel:+78452123456" className="text-muted-foreground hover:text-primary transition-colors">
-                  8 (8452) 12-34-56
+                <a href="tel:+78452477477" className="text-muted-foreground hover:text-primary transition-colors">
+                  8 (8452) 47-74-77
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <a href="mailto:info@santehnik-saratov.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@santehnik-saratov.ru
+                <a href="mailto:a477477@yandex.ru" className="text-muted-foreground hover:text-primary transition-colors">
+                  a477477@yandex.ru
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  г. Саратов, ул. Большая Горная
+                  г. Саратов, ул. Большая Горная, 290
                 </span>
               </li>
             </ul>
@@ -103,7 +88,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-border mt-8 pt-6">
           <p className="text-sm text-muted-foreground text-center">
-            © 2024 Магазин «Сантехникъ». Все права защищены.
+            © 2024 Магазин «СантехникЪ». Все права защищены.
           </p>
         </div>
       </div>

@@ -1,21 +1,15 @@
-import { CategoryCard } from '@/components/products/CategoryCard';
-import { useCategories } from '@/hooks/useProducts';
+import { CategoryCard } from '@/components/catalog/CategoryCard';
+import { useCatalog } from '@/hooks/useCatalog';
 
 export function CatalogSection() {
-  const categories = useCategories();
+  const categories = useCatalog();
 
   return (
     <section className="py-8 md:py-12">
       <div className="container-main">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
-            <CategoryCard
-              key={category.id}
-              id={category.id}
-              name={category.name}
-              icon={category.icon}
-              productCount={category.productCount}
-            />
+            <CategoryCard key={category.id} category={category} />
           ))}
         </div>
       </div>

@@ -5,28 +5,43 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    title: 'Трубы и фитинги',
-    subtitle: 'Полипропилен, металлопластик, нержавеющая сталь',
-    link: '/catalog?category=pipes',
-    image: '/placeholder.svg',
+    title: 'Каталог товаров',
+    subtitle: 'Широкий ассортимент сантехнической продукции',
+    link: '/catalog',
+    image: '/images/banners/3.png',
   },
   {
     id: 2,
-    title: 'Радиаторы отопления',
-    subtitle: 'Биметаллические, алюминиевые, стальные',
-    link: '/catalog?category=radiators',
-    image: '/placeholder.svg',
+    title: 'Качественная сантехника',
+    subtitle: 'Трубы, фитинги и инженерное оборудование',
+    link: '/catalog',
+    image: '/images/banners/3321png.png',
   },
   {
     id: 3,
-    title: 'Водонагреватели',
-    subtitle: 'Накопительные и проточные',
-    link: '/catalog?category=boilers',
-    image: '/placeholder.svg',
+    title: 'Профессиональные решения',
+    subtitle: 'Для водоснабжения, отопления и канализации',
+    link: '/catalog',
+    image: '/images/banners/32221png.png',
+  },
+  {
+    id: 4,
+    title: 'Широкий выбор',
+    subtitle: 'Более 5000 наименований в каталоге',
+    link: '/catalog',
+    image: '/images/banners/321png.png',
+  },
+  {
+    id: 5,
+    title: 'Надежные поставщики',
+    subtitle: 'Только сертифицированная продукция',
+    link: '/catalog',
+    image: '/images/banners/32.png',
   },
 ];
 
 export function HeroBanner() {
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -49,9 +64,9 @@ export function HeroBanner() {
   };
 
   return (
-    <section className="relative bg-secondary overflow-hidden">
-      <div className="container-main">
-        <div className="relative py-8 md:py-12 min-h-[320px]">
+    <section className="relative bg-background border-b border-border">
+      <div className="container-main py-6">
+        <div className="relative">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
@@ -59,27 +74,33 @@ export function HeroBanner() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0 absolute inset-0'
               } transition-opacity duration-500`}
             >
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h2 className="text-2xl md:text-4xl font-medium text-foreground mb-4 leading-tight">
-                    {slide.title}
-                  </h2>
-                  <p className="text-lg text-muted-foreground mb-6">
-                    {slide.subtitle}
-                  </p>
+              <div className="relative w-full h-[240px] md:h-[320px] rounded overflow-hidden bg-muted/30">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/placeholder.svg';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end">
+                  <div className="w-full px-6 md:px-8 pb-20 md:pb-24">
+                    <div className="max-w-xl">
+                      <h2 className="text-xl md:text-2xl font-medium mb-2 text-white leading-tight">
+                        {slide.title}
+                      </h2>
+                      <p className="text-sm md:text-base text-white/90">
+                        {slide.subtitle}
+                      </p>
+                    </div>
+                  </div>
                   <Link
                     to={slide.link}
-                    className="btn-primary inline-block"
+                    className="absolute bottom-6 md:bottom-8 left-6 md:left-8 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 rounded font-medium text-sm md:text-base transition-colors shadow-lg z-10"
                   >
-                    Подробнее
+                    Подробнее →
                   </Link>
-                </div>
-                <div className="hidden lg:flex justify-end">
-                  <img
-                    src={slide.image}
-                    alt={slide.title}
-                    className="max-h-64 object-contain"
-                  />
                 </div>
               </div>
             </div>
@@ -88,26 +109,29 @@ export function HeroBanner() {
           {/* Navigation arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground transition-colors hidden lg:block"
+            className="absolute left-4 top-1/3 -translate-y-1/2 text-white hover:text-white/80 transition-colors z-10"
+            aria-label="Предыдущий слайд"
           >
-            <ChevronLeft className="h-8 w-8" />
+            <ChevronLeft className="h-10 w-10" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground transition-colors hidden lg:block"
+            className="absolute right-4 top-1/3 -translate-y-1/2 text-white hover:text-white/80 transition-colors z-10"
+            aria-label="Следующий слайд"
           >
-            <ChevronRight className="h-8 w-8" />
+            <ChevronRight className="h-10 w-10" />
           </button>
 
           {/* Dots */}
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-1.5 mt-4">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${
                   index === currentSlide ? 'bg-primary' : 'bg-border'
                 }`}
+                aria-label={`Перейти к слайду ${index + 1}`}
               />
             ))}
           </div>

@@ -6,7 +6,6 @@ const navigation = [
   { name: 'Каталог', href: '/catalog' },
   { name: 'О магазине', href: '/about' },
   { name: 'Доставка и оплата', href: '/delivery' },
-  { name: 'Где купить', href: '/contacts' },
   { name: 'Контакты', href: '/contacts' },
 ];
 
@@ -48,11 +47,11 @@ export function Header() {
 
           {/* Phone */}
           <a 
-            href="tel:+78452123456" 
+            href="tel:+78452477477" 
             className="flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
           >
             <Phone className="h-5 w-5" />
-            <span>8 (8452) 12-34-56</span>
+            <span>8 (8452) 47-74-77</span>
           </a>
         </div>
 
@@ -130,11 +129,11 @@ export function Header() {
             </ul>
             <div className="mt-4 pt-4 border-t border-border">
               <a 
-                href="tel:+78452123456" 
+                href="tel:+78452477477" 
                 className="flex items-center gap-2 px-3 text-foreground font-medium"
               >
                 <Phone className="h-4 w-4" />
-                <span>8 (8452) 12-34-56</span>
+                <span>8 (8452) 47-74-77</span>
               </a>
             </div>
           </nav>
