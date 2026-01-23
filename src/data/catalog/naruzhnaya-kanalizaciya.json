@@ -1394,18 +1394,6 @@
               "diameter_mm": 110,
               "pack_qty": 40,
               "image_url": "/images/sinikon-comfort-clamp.jpg"
-            },
-            {
-              "article": "KPP.050.K.D",
-              "diameter_mm": 50,
-              "pack_qty": 50,
-              "image_url": "/images/sinikon-comfort-clamp-white.jpg"
-            },
-            {
-              "article": "KPP110.K.D",
-              "diameter_mm": 110,
-              "pack_qty": 40,
-              "image_url": "/images/sinikon-comfort-clamp-white.jpg"
             }
           ],
           "description_short": "Хомут «Комфорт Плюс» для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
@@ -1413,6 +1401,32 @@
           "seo_slug": "homuty-komfort-plyus",
           "seo_title": "Хомуты «Комфорт Плюс» — Инструмент и крепеж | СИНИКОН",
           "seo_meta_description": "Хомут «Комфорт Плюс» для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
+        },
+        {
+          "groupName": "Хомут \"Комфорт Плюс\" со шпилькой и дюбелем (белый)",
+          "commonSpecs": {
+            "type": "Хомут «Комфорт Плюс» со шпилькой и дюбелем",
+            "screw_size": "M10"
+          },
+          "items": [
+            {
+              "article": "KPP.050.K.D",
+              "diameter_mm": 50,
+              "pack_qty": 50,
+              "image_url": "/images/sinikon-comfort-clamp-white.jpg"
+            },
+            {
+              "article": "KPP.110.K.D",
+              "diameter_mm": 110,
+              "pack_qty": 40,
+              "image_url": "/images/sinikon-comfort-clamp-white.jpg"
+            }
+          ],
+          "description_short": "Хомут «Комфорт Плюс» со шпилькой и дюбелем (белый) для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
+          "description_full": "Хомут «Комфорт Плюс» со шпилькой и дюбелем (белый) для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
+          "seo_slug": "homut-komfort-plyus-so-shpilkoy-i-dyubelem-belyy",
+          "seo_title": "Хомут «Комфорт Плюс» со шпилькой и дюбелем (белый) — Инструмент и крепеж | СИНИКОН",
+          "seo_meta_description": "Хомут «Комфорт Плюс» со шпилькой и дюбелем (белый) для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
         },
         {
           "groupName": "Муфты противопожарные ФЕНИКС",

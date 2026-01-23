@@ -59,7 +59,9 @@ export default function CategoryPage() {
 
           {subcategory.productGroups.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {subcategory.productGroups.map((group) => (
+              {[...subcategory.productGroups]
+                .sort((a, b) => a.groupName.localeCompare(b.groupName, 'ru'))
+                .map((group) => (
                 <ProductGroupCard
                   key={group.id}
                   group={group}

@@ -8,35 +8,35 @@ const slides = [
     title: 'Каталог товаров',
     subtitle: 'Широкий ассортимент сантехнической продукции',
     link: '/catalog',
-    image: '/images/banners/3.png',
+    image: '/images/banners/каталог.png',
   },
   {
     id: 2,
     title: 'Качественная сантехника',
     subtitle: 'Трубы, фитинги и инженерное оборудование',
     link: '/catalog',
-    image: '/images/banners/3321png.png',
+    image: '/images/banners/1769150396.png',
   },
   {
     id: 3,
     title: 'Профессиональные решения',
     subtitle: 'Для водоснабжения, отопления и канализации',
     link: '/catalog',
-    image: '/images/banners/32221png.png',
+    image: '/images/banners/для водосн.png',
   },
   {
     id: 4,
     title: 'Широкий выбор',
     subtitle: 'Более 5000 наименований в каталоге',
     link: '/catalog',
-    image: '/images/banners/321png.png',
+    image: '/images/banners/более 5000.png',
   },
   {
     id: 5,
     title: 'Надежные поставщики',
     subtitle: 'Только сертифицированная продукция',
     link: '/catalog',
-    image: '/images/banners/32.png',
+    image: '/images/banners/ассортимент.png',
   },
 ];
 
@@ -74,52 +74,59 @@ export function HeroBanner() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0 absolute inset-0'
               } transition-opacity duration-500`}
             >
-              <div className="relative w-full h-[240px] md:h-[320px] rounded overflow-hidden bg-muted/30">
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = '/placeholder.svg';
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end">
-                  <div className="w-full px-6 md:px-8 pb-20 md:pb-24">
-                    <div className="max-w-xl">
-                      <h2 className="text-xl md:text-2xl font-medium mb-2 text-white leading-tight">
-                        {slide.title}
-                      </h2>
-                      <p className="text-sm md:text-base text-white/90">
-                        {slide.subtitle}
-                      </p>
-                    </div>
+              <div className="relative w-full h-[200px] md:h-[280px] rounded overflow-hidden bg-muted/30 flex">
+                {/* Левая часть - текст с отступом для стрелок */}
+                <div className="flex-1 flex flex-col justify-center pl-12 md:pl-16 pr-0 py-8 md:py-12 z-10 relative">
+                  {/* Градиент справа для плавного перехода */}
+                  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background via-background/99 to-transparent pointer-events-none" />
+                  <div className="max-w-lg relative z-10">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-foreground leading-tight">
+                      {slide.title}
+                    </h2>
+                    <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+                      {slide.subtitle}
+                    </p>
+                    <Link
+                      to={slide.link}
+                      className="inline-block px-6 md:px-8 py-3 md:py-4 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg font-semibold text-sm md:text-base transition-colors shadow-lg"
+                    >
+                      Подробнее →
+                    </Link>
                   </div>
-                  <Link
-                    to={slide.link}
-                    className="absolute bottom-6 md:bottom-8 left-6 md:left-8 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 rounded font-medium text-sm md:text-base transition-colors shadow-lg z-10"
-                  >
-                    Подробнее →
-                  </Link>
+                </div>
+                
+                {/* Правая часть - изображение */}
+                <div className="flex-1 relative overflow-hidden">
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/placeholder.svg';
+                    }}
+                  />
+                  {/* Градиент слева для плавного перехода */}
+                  <div className="absolute inset-0 bg-gradient-to-l from-background/0 via-background/15 to-background/40 pointer-events-none" />
                 </div>
               </div>
             </div>
           ))}
 
-          {/* Navigation arrows */}
+          {/* Navigation arrows - размещены слева, не перекрывают текст благодаря отступу */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/3 -translate-y-1/2 text-white hover:text-white/80 transition-colors z-10"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors z-20"
             aria-label="Предыдущий слайд"
           >
-            <ChevronLeft className="h-10 w-10" />
+            <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/3 -translate-y-1/2 text-white hover:text-white/80 transition-colors z-10"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors z-20"
             aria-label="Следующий слайд"
           >
-            <ChevronRight className="h-10 w-10" />
+            <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
           </button>
 
           {/* Dots */}

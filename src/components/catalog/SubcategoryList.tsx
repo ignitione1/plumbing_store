@@ -12,11 +12,16 @@ export function SubcategoryList({ subcategories, categorySlug }: SubcategoryList
     return null;
   }
 
+  // Сортируем подкатегории по названию по алфавиту
+  const sortedSubcategories = [...subcategories].sort((a, b) => 
+    a.name.localeCompare(b.name, 'ru')
+  );
+
   return (
     <div className="mb-8">
       <h2 className="text-lg font-medium text-foreground mb-4">Подкатегории</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {subcategories.map((subcategory) => {
+        {sortedSubcategories.map((subcategory) => {
           const productCount = subcategory.productGroups.reduce(
             (sum, group) => sum + group.items.length,
             0
