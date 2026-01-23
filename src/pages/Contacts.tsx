@@ -1,8 +1,35 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import { useEffect, useRef } from 'react';
 
 const Contacts = () => {
+  const placemarkRef = useRef<any>(null);
+  const apiKey = import.meta.env.VITE_YANDEX_MAPS_API_KEY;
+
+  useEffect(() => {
+    // Открываем balloon автоматически при загрузке карты
+    const timer = setTimeout(() => {
+      if (placemarkRef.current) {
+        const placemark = placemarkRef.current;
+        try {
+          // Пробуем разные способы открытия balloon
+          if (placemark.balloon && placemark.balloon.open) {
+            placemark.balloon.open();
+          } else if (placemark.events) {
+            // Триггерим событие click для открытия balloon
+            placemark.events.fire('click');
+          }
+        } catch (error) {
+          console.log('Balloon open error:', error);
+        }
+      }
+    }, 2500);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Layout>
       {/* Breadcrumb */}
@@ -22,9 +49,9 @@ const Contacts = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact info */}
           <div>
-            <div className="border border-border rounded p-6 mb-6">
+            <div className="border border-border rounded p-6 h-96">
               <h2 className="font-medium text-foreground mb-4 uppercase text-sm">Магазин «СантехникЪ»</h2>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -40,8 +67,8 @@ const Contacts = () => {
                   <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-sm text-muted-foreground">Email</div>
-                    <a href="mailto:a477477@yandex.ru" className="text-foreground hover:text-primary transition-colors">
-                      a477477@yandex.ru
+                    <a href="mailto:Virado@bk.ru" className="text-foreground hover:text-primary transition-colors">
+                      Virado@bk.ru
                     </a>
                   </div>
                 </div>
@@ -65,38 +92,47 @@ const Contacts = () => {
                 </div>
               </div>
             </div>
-
-            {/* Contact form */}
-            <div className="border border-border rounded p-6">
-              <h2 className="font-medium text-foreground mb-4 uppercase text-sm">Напишите нам</h2>
-              <form className="space-y-4">
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-1">Ваше имя</label>
-                  <input type="text" className="search-input w-full" placeholder="Иван Иванов" />
-                </div>
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-1">Телефон</label>
-                  <input type="tel" className="search-input w-full" placeholder="+7 (___) ___-__-__" />
-                </div>
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-1">Сообщение</label>
-                  <textarea className="search-input w-full h-24 resize-none" placeholder="Ваш вопрос..." />
-                </div>
-                <button type="submit" className="btn-primary w-full">
-                  Отправить
-                </button>
-              </form>
-            </div>
           </div>
 
           {/* Map */}
           <div>
-            <div className="bg-muted rounded border border-border h-96 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="h-10 w-10 mx-auto mb-3 opacity-50" />
-                <p className="text-sm">Карта</p>
-                <p className="text-xs">г. Саратов, ул. Большая Горная, 290</p>
-              </div>
+            <div className="rounded border border-border h-96 overflow-hidden">
+              <YMaps 
+                query={{ 
+                  apikey: apiKey,
+                  load: 'package.full',
+                  lang: 'ru_RU'
+                }}
+              >
+                <Map
+                  defaultState={{
+                    center: [51.545130, 46.020494],
+                    zoom: 16,
+                  }}
+                  width="100%"
+                  height="100%"
+                >
+                  <Placemark
+                    instanceRef={placemarkRef}
+                    geometry={[51.545130, 46.020494]}
+                    properties={{
+                      balloonContentHeader: 'Магазин «СантехникЪ»',
+                      balloonContentBody: `
+                        <div style="padding: 8px 0;">
+                          <div style="margin-bottom: 8px;"><strong>Адрес:</strong><br/>г. Саратов, ул. Большая Горная, 290</div>
+                          <div style="margin-bottom: 8px;"><strong>Телефон:</strong><br/><a href="tel:+78452477477" style="color: #0066cc; text-decoration: none;">8 (8452) 47-74-77</a></div>
+                          <div style="margin-bottom: 8px;"><strong>Email:</strong><br/><a href="mailto:Virado@bk.ru" style="color: #0066cc; text-decoration: none;">Virado@bk.ru</a></div>
+                          <div><strong>Режим работы:</strong><br/>Ежедневно: 08:00 — 19:00</div>
+                        </div>
+                      `,
+                    }}
+                    options={{
+                      preset: 'islands#blueIcon',
+                      iconColor: '#0066cc',
+                    }}
+                  />
+                </Map>
+              </YMaps>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import CatalogPage from "./pages/CatalogPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductGroupPage from "./pages/ProductGroupPage";
 import Product from "./pages/Product";
+import SearchPage from "./pages/SearchPage";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/catalog/:categorySlug/:subcategorySlug" element={<CategoryPage />} />
           <Route path="/catalog/:categorySlug/:subcategorySlug/:groupSlug" element={<ProductGroupPage />} />
           <Route path="/product/:article" element={<Product />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/delivery" element={<Delivery />} />

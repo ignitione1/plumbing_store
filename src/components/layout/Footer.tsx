@@ -71,8 +71,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <a href="mailto:a477477@yandex.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                  a477477@yandex.ru
+                <a href="mailto:Virado@bk.ru" className="text-muted-foreground hover:text-primary transition-colors">
+                  Virado@bk.ru
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">
@@ -88,7 +88,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-border mt-8 pt-6">
           <p className="text-sm text-muted-foreground text-center">
-            © 2024 Магазин «СантехникЪ». Все права защищены.
+            © 2026 Магазин «СантехникЪ». Все права защищены.
           </p>
         </div>
       </div>
