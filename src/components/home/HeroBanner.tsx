@@ -64,7 +64,7 @@ export function HeroBanner() {
   };
 
   return (
-    <section className="relative bg-background border-b border-border">
+    <section className="hidden md:block relative bg-background border-b border-border">
       <div className="container-main py-6">
         <div className="relative">
           {slides.map((slide, index) => (
