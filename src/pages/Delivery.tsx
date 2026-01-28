@@ -33,7 +33,7 @@ const Delivery = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Доставка по городу в течение 24 часов
                     </p>
-                    <p className="text-sm text-primary">от 300 ₽ / бесплатно от 5000 ₽</p>
+                    <p className="text-sm text-muted-foreground">Стоимость доставки уточняйте у менеджера</p>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Delivery = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Доставка в населённые пункты Саратовской области
                     </p>
-                    <p className="text-sm text-primary">от 500 ₽</p>
+                    <p className="text-sm text-muted-foreground">Стоимость доставки уточняйте у менеджера</p>
                   </div>
                 </div>
               </div>
@@ -56,10 +56,9 @@ const Delivery = () => {
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Самовывоз</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-sm text-muted-foreground">
                       Забрать заказ из магазина по адресу: г. Саратов, ул. Большая Горная, 290
                     </p>
-                    <p className="text-sm text-primary">Бесплатно</p>
                   </div>
                 </div>
               </div>
@@ -68,9 +67,9 @@ const Delivery = () => {
             <div className="mt-6 p-4 bg-secondary rounded">
               <h3 className="font-medium text-foreground mb-2 text-sm uppercase">Условия доставки</h3>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Бесплатная доставка при заказе от 5 000 ₽</li>
                 <li>• Доставка в рабочие дни с 10:00 до 18:00</li>
-                <li>• Подъём на этаж — бесплатно до 3 этажа</li>
+                <li>• Подъём на этаж — уточняйте у менеджера</li>
+                <li>• Стоимость доставки рассчитывается индивидуально</li>
               </ul>
             </div>
           </div>

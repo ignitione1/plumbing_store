@@ -52,73 +52,78 @@ export function normalizeCatalogData(): CatalogCategory[] {
       vnutrennyayaKanalizaciya as CatalogFileData,
     ];
 
-    return catalogFilesData.map((fileData) => {
-    const categorySlug = generateSlug(fileData.name);
+    const sinikonSlug = 'sinikon';
 
-    const subcategories: CatalogSubcategoryNormalized[] = fileData.subcategories.map(
-      (subcategory) => {
-        const subcategorySlug = generateSlug(subcategory.name);
+    // Преобразуем существующие категории в подкатегории SINIKON
+    // Подкатегории оригинальных категорий объединяются в группы товаров
+    const sinikonSubcategories: CatalogSubcategoryNormalized[] = catalogFilesData.map((fileData) => {
+      const originalCategorySlug = generateSlug(fileData.name);
+      const subcategorySlug = originalCategorySlug; // Используем slug оригинальной категории
 
-        const productGroups: ProductGroupNormalized[] = subcategory.productGroups.map(
-          (group) => {
-            const groupSlug = group.seo_slug || generateSlug(group.groupName);
+      // Объединяем все группы товаров из всех подкатегорий оригинальной категории
+      const allProductGroups: ProductGroupNormalized[] = [];
 
-            // Трансформируем items в CatalogProduct
-            const items: CatalogProduct[] = group.items.map((item) => {
-              // Объединяем commonSpecs и характеристики item
-              const specs: Record<string, any> = {
-                ...group.commonSpecs,
-                ...item,
-              };
+      fileData.subcategories.forEach((subcategory) => {
+        subcategory.productGroups.forEach((group) => {
+          const groupSlug = group.seo_slug || generateSlug(group.groupName);
 
-              return {
-                article: item.article,
-                groupId: groupSlug,
-                categorySlug,
-                subcategorySlug,
-                groupSlug,
-                specs,
-                ...item,
-              };
-            });
+          // Трансформируем items в CatalogProduct
+          const items: CatalogProduct[] = group.items.map((item) => {
+            // Объединяем commonSpecs и характеристики item
+            const specs: Record<string, any> = {
+              ...group.commonSpecs,
+              ...item,
+            };
 
             return {
-              id: groupSlug,
-              groupName: group.groupName,
-              slug: groupSlug,
-              categorySlug,
+              article: item.article,
+              groupId: groupSlug,
+              categorySlug: sinikonSlug,
               subcategorySlug,
-              commonSpecs: group.commonSpecs,
-              items,
-              descriptionShort: group.description_short,
-              descriptionFull: group.description_full,
-              seoSlug: group.seo_slug,
-              seoTitle: group.seo_title,
-              seoMetaDescription: group.seo_meta_description,
-              imageUrl: group.commonSpecs.image_url,
+              groupSlug,
+              specs,
+              ...item,
             };
-          }
-        );
+          });
 
-        return {
-          id: subcategorySlug,
-          name: subcategory.name,
-          slug: subcategorySlug,
-          categorySlug,
-          imageUrl: subcategory.image_url,
-          productGroups,
-        };
-      }
-    );
+          allProductGroups.push({
+            id: groupSlug,
+            groupName: group.groupName,
+            slug: groupSlug,
+            categorySlug: sinikonSlug,
+            subcategorySlug,
+            commonSpecs: group.commonSpecs,
+            items,
+            descriptionShort: group.description_short,
+            descriptionFull: group.description_full,
+            seoSlug: group.seo_slug,
+            seoTitle: group.seo_title,
+            seoMetaDescription: group.seo_meta_description,
+            imageUrl: group.commonSpecs.image_url,
+          });
+        });
+      });
 
       return {
-        id: categorySlug,
+        id: subcategorySlug,
         name: fileData.name,
-        slug: categorySlug,
+        slug: subcategorySlug,
+        categorySlug: sinikonSlug,
         imageUrl: fileData.image_url,
-        subcategories,
+        productGroups: allProductGroups,
       };
     });
+
+    // Создаём категорию SINIKON
+    const sinikonCategory: CatalogCategory = {
+      id: sinikonSlug,
+      name: 'SINIKON',
+      slug: sinikonSlug,
+      imageUrl: '/images/main_categories/sinikon.png',
+      subcategories: sinikonSubcategories,
+    };
+
+    return [sinikonCategory];
   } catch (error) {
     console.error('Ошибка нормализации данных каталога:', error);
     throw error;
