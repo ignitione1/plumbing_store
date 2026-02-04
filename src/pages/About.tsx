@@ -22,7 +22,7 @@ const About = () => {
           <div className="lg:col-span-2">
             <div className="prose prose-sm max-w-none text-muted-foreground">
               <p className="mb-4 leading-relaxed">
-                Магазин «Сантехникъ» — специализированный центр инженерной сантехники.
+                Магазин «СантехникЪ» — специализированный центр инженерной сантехники.
               </p>
 
               <p className="mb-4 leading-relaxed">

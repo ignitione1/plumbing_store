@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Контакты', href: '/contacts' },
 ];
 
-export function Header() {
+ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -156,7 +156,19 @@ export function Header() {
                       onMouseEnter={() => setFocusedIndex(index)}
                     >
                       <div className="mt-0.5 text-muted-foreground flex-shrink-0">
-                        {getSuggestionIcon(suggestion.type)}
+                        {suggestion.imageUrl ? (
+                          <img 
+                            src={suggestion.imageUrl} 
+                            alt={suggestion.title}
+                            className="h-8 w-8 object-cover rounded"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = '/placeholder.svg';
+                            }}
+                          />
+                        ) : (
+                          getSuggestionIcon(suggestion.type)
+                        )}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="text-sm font-medium text-foreground truncate">
@@ -260,7 +272,19 @@ export function Header() {
                       onMouseEnter={() => setFocusedIndex(index)}
                     >
                       <div className="mt-0.5 text-muted-foreground flex-shrink-0">
-                        {getSuggestionIcon(suggestion.type)}
+                        {suggestion.imageUrl ? (
+                          <img 
+                            src={suggestion.imageUrl} 
+                            alt={suggestion.title}
+                            className="h-8 w-8 object-cover rounded"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = '/placeholder.svg';
+                            }}
+                          />
+                        ) : (
+                          getSuggestionIcon(suggestion.type)
+                        )}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="text-sm font-medium text-foreground truncate">

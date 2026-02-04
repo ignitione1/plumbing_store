@@ -8,6 +8,7 @@ export interface SearchSuggestion {
   subtitle?: string;
   url: string;
   article?: string;
+  imageUrl?: string;
 }
 
 export function useSearchSuggestions(query: string, limit: number = 7): SearchSuggestion[] {
@@ -20,21 +21,29 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
     }
 
     const searchQuery = query.toLowerCase().trim();
+
+    const isImagePathLike = (value: string): boolean => {
+      const v = value.trim().toLowerCase();
+      if (!v) return false;
+      if (v.startsWith('/images/')) return true;
+      return /\.(png|jpe?g|gif|webp|svg|ico)(\?.*)?$/.test(v);
+    };
     const suggestions: SearchSuggestion[] = [];
 
     // Создаем мапы для быстрого поиска
-    const categoryMap = new Map<string, { name: string; slug: string }>();
-    const subcategoryMap = new Map<string, { name: string; slug: string; categorySlug: string }>();
-    const groupMap = new Map<string, { name: string; slug: string; categorySlug: string; subcategorySlug: string }>();
+    const categoryMap = new Map<string, { name: string; slug: string; imageUrl?: string }>();
+    const subcategoryMap = new Map<string, { name: string; slug: string; categorySlug: string; imageUrl?: string }>();
+    const groupMap = new Map<string, { name: string; slug: string; categorySlug: string; subcategorySlug: string; commonSpecs?: any; imageUrl?: string }>();
 
     catalog.forEach(category => {
-      categoryMap.set(category.slug, { name: category.name, slug: category.slug });
+      categoryMap.set(category.slug, { name: category.name, slug: category.slug, imageUrl: category.imageUrl });
       category.subcategories.forEach(subcategory => {
         const key = `${category.slug}/${subcategory.slug}`;
         subcategoryMap.set(key, {
           name: subcategory.name,
           slug: subcategory.slug,
           categorySlug: category.slug,
+          imageUrl: subcategory.imageUrl,
         });
         subcategory.productGroups.forEach(group => {
           const groupKey = `${category.slug}/${subcategory.slug}/${group.slug}`;
@@ -43,6 +52,8 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
             slug: group.slug,
             categorySlug: category.slug,
             subcategorySlug: subcategory.slug,
+            commonSpecs: group.commonSpecs,
+            imageUrl: group.imageUrl,
           });
         });
       });
@@ -55,6 +66,7 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
           type: 'category',
           title: category.name,
           url: `/catalog/${slug}`,
+          imageUrl: category.imageUrl,
         });
       }
     });
@@ -68,6 +80,7 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
           title: subcategory.name,
           subtitle: categoryName,
           url: `/catalog/${subcategory.categorySlug}/${subcategory.slug}`,
+          imageUrl: subcategory.imageUrl,
         });
       }
     });
@@ -75,12 +88,12 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
     // Поиск по группам товаров
     groupMap.forEach((group, key) => {
       if (group.name.toLowerCase().includes(searchQuery)) {
-        const categoryName = categoryMap.get(group.categorySlug)?.name || '';
         suggestions.push({
           type: 'group',
           title: group.name,
-          subtitle: categoryName,
+          subtitle: categoryMap.get(group.categorySlug)?.name || '',
           url: `/catalog/${group.categorySlug}/${group.subcategorySlug}/${group.slug}`,
+          imageUrl: group.imageUrl,
         });
       }
     });
@@ -116,11 +129,17 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
 
       // Поиск по другим полям товара
       for (const [key, value] of Object.entries(product)) {
-        if (['groupId', 'categorySlug', 'subcategorySlug', 'groupSlug', 'specs', 'article'].includes(key)) {
+        if (['groupId', 'categorySlug', 'subcategorySlug', 'groupSlug', 'specs', 'article', 'image_url', 'image', 'imageUrl', 'img', 'photo', 'picture'].includes(key)) {
           continue;
         }
 
-        if (typeof value === 'string' && value.toLowerCase().includes(searchQuery)) {
+        if (typeof value === 'string') {
+          if (isImagePathLike(value)) {
+            continue;
+          }
+          if (!value.toLowerCase().includes(searchQuery)) {
+            continue;
+          }
           const fieldScore = value.toLowerCase().startsWith(searchQuery) ? 35 : 25;
           if (matchScore < fieldScore) {
             matchScore = fieldScore;
@@ -130,12 +149,23 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
       }
 
       if (matchScore > 0) {
+        // Получаем URL изображения - используем ту же логику, что на странице товара
+        let imageUrl: string | undefined;
+        if (group?.imageUrl) {
+          imageUrl = group.imageUrl;
+        } else if (product.image_url) {
+          imageUrl = product.image_url;
+        } else if (group && group.commonSpecs?.image_url) {
+          imageUrl = group.commonSpecs.image_url;
+        }
+
         productMatches.push({
           type: 'product',
           title: matchText || product.article,
           subtitle: group?.name || '',
           url: `/product/${encodeURIComponent(product.article)}`,
           article: product.article,
+          imageUrl,
           score: matchScore,
         });
       }
@@ -145,12 +175,12 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
     productMatches.sort((a, b) => b.score - a.score);
 
     // Сортируем и ограничиваем результаты
-    // Сначала категории, потом подкатегории, потом группы, потом товары
+    // Сначала товары (чтобы не вытеснялись лимитом), затем группы, подкатегории, категории
     const sorted: SearchSuggestion[] = [
-      ...suggestions.filter(s => s.type === 'category'),
-      ...suggestions.filter(s => s.type === 'subcategory'),
-      ...suggestions.filter(s => s.type === 'group'),
       ...productMatches.map(({ score, ...rest }) => rest),
+      ...suggestions.filter(s => s.type === 'group'),
+      ...suggestions.filter(s => s.type === 'subcategory'),
+      ...suggestions.filter(s => s.type === 'category'),
     ].slice(0, limit);
 
     return sorted;

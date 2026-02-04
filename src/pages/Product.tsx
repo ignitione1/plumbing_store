@@ -1,5 +1,4 @@
 import { useParams, Link } from 'react-router-dom';
-import { Phone } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { Breadcrumbs } from '@/components/catalog/Breadcrumbs';
 import { ProductSpecs } from '@/components/catalog/ProductSpecs';
@@ -63,7 +62,7 @@ export default function Product() {
           {/* Image placeholder */}
           <div className="bg-muted/30 rounded border border-border p-8 flex items-center justify-center min-h-[400px]">
             <img
-              src={getProductGroupImageUrl(group?.imageUrl, product.article)}
+              src={getProductGroupImageUrl(group?.imageUrl)}
               alt={productTitle}
               className="max-h-80 object-contain"
               onError={(e) => {
@@ -85,14 +84,6 @@ export default function Product() {
               Артикул: {product.article}
             </p>
             <h1 className="text-2xl font-medium text-foreground mb-4">{productTitle}</h1>
-
-            {/* Actions */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <a href="tel:+78452477477" className="btn-outline flex items-center justify-center gap-2">
-                <Phone className="h-4 w-4" />
-                Заказать звонок
-              </a>
-            </div>
 
             {/* Description */}
             {group?.descriptionFull && (

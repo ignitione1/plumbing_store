@@ -31,6 +31,13 @@ export default function SearchPage() {
     return { groupMap, categoryMap, subcategoryMap };
   }, [catalog]);
 
+  const isImagePathLike = (value: string): boolean => {
+    const v = value.trim().toLowerCase();
+    if (!v) return false;
+    if (v.startsWith('/images/')) return true;
+    return /\.(png|jpe?g|gif|webp|svg|ico)(\?.*)?$/.test(v);
+  };
+
   // Поиск по товарам
   const searchResults = useMemo(() => {
     if (!query.trim()) {
@@ -69,13 +76,19 @@ export default function SearchPage() {
 
       // Поиск по всем полям товара
       for (const [key, value] of Object.entries(product)) {
-        // Пропускаем служебные поля
-        if (['groupId', 'categorySlug', 'subcategorySlug', 'groupSlug', 'specs'].includes(key)) {
+        // Пропускаем служебные поля и поля изображений (кроме image_url)
+        if (['groupId', 'categorySlug', 'subcategorySlug', 'groupSlug', 'specs', 'image_url', 'image', 'imageUrl', 'img', 'photo', 'picture'].includes(key)) {
           continue;
         }
 
         // Ищем в строковых значениях
-        if (typeof value === 'string' && value.toLowerCase().includes(searchQuery)) {
+        if (typeof value === 'string') {
+          if (isImagePathLike(value)) {
+            continue;
+          }
+          if (!value.toLowerCase().includes(searchQuery)) {
+            continue;
+          }
           return true;
         }
 
@@ -91,7 +104,18 @@ export default function SearchPage() {
       // Поиск в specs отдельно
       if (product.specs && typeof product.specs === 'object') {
         for (const [specKey, specValue] of Object.entries(product.specs)) {
-          if (typeof specValue === 'string' && specValue.toLowerCase().includes(searchQuery)) {
+          // Пропускаем поля изображений в specs (кроме image_url)
+          if (['image_url', 'image', 'imageUrl', 'img', 'photo', 'picture'].includes(specKey)) {
+            continue;
+          }
+          
+          if (typeof specValue === 'string') {
+            if (isImagePathLike(specValue)) {
+              continue;
+            }
+            if (!specValue.toLowerCase().includes(searchQuery)) {
+              continue;
+            }
             return true;
           }
           if (Array.isArray(specValue)) {
