@@ -1,105 +1,223 @@
-# Welcome to your Lovable project
+# СантехникЪ — Интернет-магазин сантехники
 
-## Project info
+Современный интернет-магазин сантехнической продукции с каталогом товаров, системой заказов и полной информацией о компании.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Обзор проекта
 
-## How can I edit this code?
+**СантехникЪ** — это полнофункциональный веб-сайт для продажи сантехнической продукции в Саратове. Проект включает в себя:
 
-There are several ways of editing your application.
+- 📦 **Каталог товаров** с древовидной структурой (Категории → Подкатегории → Группы товаров → Товары)
+- 🔍 **Поиск товаров** с умными подсказками и фильтрацией
+- 📱 **Адаптивный дизайн** для всех устройств
+- 🏪 **Информационные страницы** (О магазине, Доставка и оплата, Контакты)
+- 🛡️ **SEO-оптимизация** с geo-метками для местного поиска
+- ⚡ **Высокая производительность** с оптимизацией изображений и кэшированием
 
-**Use Lovable**
+## 🛠️ Стек технологий
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Frontend
+- **React 18** — современная библиотека для создания пользовательских интерфейсов
+- **TypeScript** — типобезопасный JavaScript для надежности кода
+- **Vite** — быстрый сборщик и сервер разработки
+- **Tailwind CSS** — утилитарный CSS-фреймворк для стилизации
+- **Shadcn/ui** — компонентная библиотека на основе Radix UI
+- **React Router** — клиентская маршрутизация
+- **React Query** — управление состоянием и кэширование данных
+- **Lucide React** — иконографический шрифт
 
-Changes made via Lovable will be committed automatically to this repo.
+### Инструменты разработки
+- **ESLint** — линтинг кода
+- **Prettier** — форматирование кода
+- **TypeScript Compiler** — компиляция TypeScript
+- **PostCSS** — обработка CSS
 
-**Use your preferred IDE**
+## 📁 Структура проекта
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/          # Переиспользуемые компоненты
+│   ├── layout/         # Компоненты макета (Header, Footer)
+│   ├── catalog/        # Компоненты каталога
+│   ├── home/          # Компоненты главной страницы
+│   └── ui/            # Базовые UI компоненты
+├── pages/              # Страницы приложения
+├── lib/               # Утилиты и helpers
+├── hooks/             # Кастомные React хуки
+├── types/             # TypeScript типы
+├── data/              # Данные каталога
+│   └── catalog/       # JSON файлы с товарами
+└── assets/            # Статические ресурсы
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Архитектура
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Каталог товаров
+- **Нормализованная структура данных** через `catalogMapper.ts`
+- **Древовидная иерархия**: Категории → Подкатегории → Группы товаров → Товары
+- **SEO-оптимизированные URL** для каждой страницы
+- **Гибкая система фильтрации** и поиска
 
-**Use GitHub Codespaces**
+### Компоненты
+- **Layout** — базовый макет с Header и Footer
+- **ProductGroupCard** — карточки групп товаров с изображениями
+- **CategoryCard** — карточки категорий
+- **SearchSuggestions** — умный поиск с подсказками
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Данные
+- **JSON-файлы каталога** с полной информацией о товарах
+- **SEO-мета данные** для каждой страницы
+- **Geo-метки** для локального SEO
+- **Изображения товаров** с оптимизацией
 
-## What technologies are used for this project?
+## 🎯 Основные функции
 
-This project is built with:
+### 📦 Каталог товаров
+- Просмотр категорий и подкатегорий
+- Детальная информация о товарах
+- Изображения товаров с lazy loading
+- SEO-оптимизированные страницы
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 🔍 Поиск и навигация
+- Умный поиск с подсказками
+- Фильтрация по категориям
+- Хлебные крошки для навигации
+- Быстрый доступ к популярным товарам
 
-## Команды запуска
+### 📱 Адаптивность
+- Мобильная версия с оптимизированным меню
+- Плавные переходы между брейкпоинтами
+- Touch-friendly интерфейс
+- Оптимизированные размеры изображений
 
-### Локальная разработка
-```sh
-# Установка зависимостей (первый раз)
+### 🛡️ SEO и производительность
+- Meta-теги для всех страниц
+- Open Graph разметка
+- Geo-метки для местного поиска
+- Оптимизация изображений
+- Кэширование данных
+
+## 🚀 Быстрый старт
+
+### Требования
+- Node.js 18+
+- npm или yarn
+
+### Установка
+```bash
+# Клонирование репозитория
+git clone https://github.com/ignitione1/plumbing_store.git
+cd plumbing_store
+
+# Установка зависимостей
 npm install
 
-# Запуск dev-сервера
+# Запуск в режиме разработки
 npm run dev
-```
 
-### Сборка проекта
-```sh
-# Production сборка
+# Сборка для продакшена
 npm run build
 
-# Development сборка
-npm run build:dev
+# Предпросмотр продакшен-сборки
+npm run preview
 ```
 
-### Запуск через Docker
-```sh
-# Сборка и запуск контейнера
-docker-compose up --build
-
-# Запуск в фоновом режиме
-docker-compose up -d
-
-# Остановка
-docker-compose down
+### Переменные окружения
+Создайте файл `.env.local` в корне проекта:
+```env
+VITE_API_URL=http://localhost:3000
+VITE_SITE_URL=https://your-domain.com
 ```
 
-## How can I deploy this project?
+## 📊 Особенности реализации
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### 🗂️ Управление каталогом
+- **JSON-основанная система** для легкого обновления товаров
+- **Автоматическая нормализация** данных при загрузке
+- **Гибкая структура** для добавления новых категорий
+- **SEO-дружественные URL** для всех страниц
 
-## Can I connect a custom domain to my Lovable project?
+### 🎨 Дизайн и UX
+- **Современный минималистичный дизайн**
+- **Система цветов** с поддержкой темной темы
+- **Анимации и переходы** для улучшения UX
+- **Доступность** (accessibility) для всех пользователей
 
-Yes, you can!
+### ⚡ Оптимизация
+- **Код-сплиттинг** для быстрой загрузки
+- **Lazy loading** изображений
+- **Кэширование** запросов к данным
+- **Минификация** CSS и JS в продакшене
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Развертывание
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Vercel (рекомендуется)
+```bash
+# Установка Vercel CLI
+npm i -g vercel
+
+# Развертывание
+vercel --prod
+```
+
+### Docker
+```bash
+# Сборка Docker образа
+docker build -t plumbing-store .
+
+# Запуск контейнера
+docker run -p 3000:3000 plumbing-store
+```
+
+### Статический хостинг
+```bash
+# Сборка статических файлов
+npm run build
+
+# Развертывание папки dist
+```
+
+## 📈 Будущие улучшения
+
+- [ ] 🛒 Корзина и оформление заказа
+- [ ] 👤 Личный кабинет пользователя
+- [ ] 💳 Интеграция платежных систем
+- [ ] 📊 Панель администрирования
+- [ ] 🤖 PWA для мобильных устройств
+- [ ] 🌍 Мультиязычность
+- [ ] 📱 Мобильное приложение
+
+## 🤝 Вклад
+
+Contributions приветствуются! Пожалуйста, создайте Issue для обсуждения изменений или Pull Request для внесения улучшений.
+
+### Разработка
+```bash
+# Создание новой ветки
+git checkout -b feature/amazing-feature
+
+# Внесение изменений
+git commit -m 'feat: add amazing feature'
+
+# Отправка изменений
+git push origin feature/amazing-feature
+```
+
+## 📄 Лицензия
+
+Этот проект распространяется под лицензией MIT. Подробности в файле [LICENSE](LICENSE).
+
+## 👥 Команда
+
+- **Разработка** — [Ваше имя]
+- **Дизайн** — [Имя дизайнера]
+- **Контент** — [Имя контент-менеджера]
+
+## 📞 Контакты
+
+- 📧 **Email**: virado@bk.ru
+- 📱 **Телефон**: 8 (8452) 477-477
+- 📍 **Адрес**: г. Саратов, ул. Большая Горная, д. 290
+
+---
+
+**СантехникЪ** — Ваш надежный партнер в мире сантехники! 🚽
