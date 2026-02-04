@@ -12,10 +12,10 @@ export function ProductGroupCard({ group, categorySlug, subcategorySlug }: Produ
   return (
     <Link
       to={`/catalog/${categorySlug}/${subcategorySlug}/${group.slug}`}
-      className="border border-border rounded overflow-hidden hover:border-primary/30 transition-colors block"
+      className="border border-border rounded overflow-hidden hover:border-primary/30 transition-colors block bg-white"
     >
       {/* Image */}
-      <div className="aspect-video bg-muted/30 flex items-center justify-center p-4">
+      <div className="aspect-video bg-white flex items-center justify-center p-4">
         <img
           src={getProductGroupImageUrl(group.imageUrl)}
           alt={group.groupName}

@@ -1,6 +1,12 @@
 {
   "name": "Системы внутренней канализации",
   "image_url": "/images/categories/vnutrennyaya-kanalizaciya.png",
+  "geo": {
+    "city": "Саратов",
+    "region": "Саратовская область",
+    "country": "Россия",
+    "address": "ул. Большая Горная, д. 290"
+  },
   "subcategories": [
     {
       "name": "Трубы и фитинги из полипропилена СИНИКОН Стандарт",
@@ -11,7 +17,8 @@
           "commonSpecs": {
             "type": "Труба однораструбная",
             "diameter_mm": 32,
-            "wall_thickness_mm": "1.8±0.4"
+            "wall_thickness_mm": "1.8±0.4",
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -51,7 +58,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 40,
             "wall_thickness_mm": "1.8±0.4",
-            "image_url": "/images/sinikon-standard-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -91,7 +98,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 50,
             "wall_thickness_mm": "1.8±0.4",
-            "image_url": "/images/sinikon-standard-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -155,7 +162,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 75,
             "wall_thickness_mm": "1.9±0.4",
-            "image_url": "/images/sinikon-standard-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -213,7 +220,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 110,
             "wall_thickness_mm": "2.7±0.5",
-            "image_url": "/images/sinikon-standard-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -277,7 +284,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 125,
             "wall_thickness_mm": "3.1±0.6",
-            "image_url": "/images/sinikon-standard-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/689f0628a946aa86745646a9c59526cc.png"
           },
           "items": [
             {
@@ -334,7 +341,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "15°",
-            "image_url": "/images/sinikon-standard-elbow-15.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/40ca89172e683da7e7e99dd82f9176a9.png"
           },
           "items": [
             {
@@ -379,7 +386,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "30°",
-            "image_url": "/images/sinikon-standard-elbow-30.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/9c47d0ffa449955ebcd74f23211b8e6f.png"
           },
           "items": [
             {
@@ -424,7 +431,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "45°",
-            "image_url": "/images/sinikon-standard-elbow-45.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/044454c1cdae9f3a539d6c1ce530de01.png"
           },
           "items": [
             {
@@ -469,7 +476,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "67°30'",
-            "image_url": "/images/sinikon-standard-elbow-67.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/16606fb8c98020e12774dc61cb148b84.png"
           },
           "items": [
             {
@@ -514,7 +521,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "87°30'",
-            "image_url": "/images/sinikon-standard-elbow-87.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/f6bddbef23372d7e5aff136d1f0ad035.png"
           },
           "items": [
             {
@@ -558,7 +565,7 @@
           "groupName": "Отводы универсальные",
           "commonSpecs": {
             "type": "Отвод универсальный",
-            "image_url": "/images/sinikon-standard-universal-elbow.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/2ed6402e6971bd61e5bebcf9dbfd40db.jpg"
           },
           "items": [
             {
@@ -584,7 +591,7 @@
           "groupName": "Крестовины одноплоскостные",
           "commonSpecs": {
             "type": "Крестовина одноплоскостная",
-            "image_url": "/images/sinikon-standard-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/9ca1a2f932226de093d9227f46baddd4.png"
           },
           "items": [
             {
@@ -658,7 +665,7 @@
           "groupName": "Крестовины двухсторонние",
           "commonSpecs": {
             "type": "Крестовина двухсторонняя",
-            "image_url": "/images/sinikon-standard-double-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/4018fec71ef237d411c6e66164935082.jpg"
           },
           "items": [
             {
@@ -680,7 +687,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "angle": "45°",
-            "image_url": "/images/sinikon-standard-tee-45.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/2c51ca637f8b30fa7022fdb9a58b5d18.png"
           },
           "items": [
             {
@@ -761,7 +768,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "angle": "67°30'",
-            "image_url": "/images/sinikon-standard-tee-67.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/62c86f34e0a3514bafcd6187e89de82c.png"
           },
           "items": [
             {
@@ -836,7 +843,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "angle": "87°30'",
-            "image_url": "/images/sinikon-standard-tee-87.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/8ef734149e6ad1114959ea3211427ecb.png"
           },
           "items": [
             {
@@ -916,7 +923,7 @@
           "groupName": "Крестовины двухплоскостные",
           "commonSpecs": {
             "type": "Крестовина двухплоскостная",
-            "image_url": "/images/sinikon-standard-double-plane-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/268e8da74fede1a4ed58b1bc9b9d78ae.png"
           },
           "items": [
             {
@@ -972,7 +979,7 @@
           "groupName": "Ревизии",
           "commonSpecs": {
             "type": "Ревизия",
-            "image_url": "/images/sinikon-standard-revision.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/6153a358834515c5dbb4650488b2ee28.png"
           },
           "items": [
             {
@@ -1004,7 +1011,7 @@
           "groupName": "Переход эксцентрический с уменьшением диаметра",
           "commonSpecs": {
             "type": "Переход эксцентрический с уменьшением диаметра",
-            "image_url": "/images/sinikon-standard-eccentric-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/a4657daf5ef2e22d2e2b829a32869687.png"
           },
           "items": [
             {
@@ -1044,7 +1051,7 @@
           "groupName": "Переходы концентрические",
           "commonSpecs": {
             "type": "Переход концентрический",
-            "image_url": "/images/sinikon-standard-concentric-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/c66d8e0e00f18c9d6c84cce7a68af21b.jpg"
           },
           "items": [
             {
@@ -1072,7 +1079,7 @@
           "groupName": "Переход эксцентрический с увеличением диаметра",
           "commonSpecs": {
             "type": "Переход эксцентрический с увеличением диаметра",
-            "image_url": "/images/sinikon-standard-eccentric-increase.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/afe3d710a893a691b5b5e161945a7a79.jpg"
           },
           "items": [
             {
@@ -1098,7 +1105,7 @@
           "groupName": "Переходы эксцентрические угловые 90°",
           "commonSpecs": {
             "type": "Переход эксцентрический угловой 90°",
-            "image_url": "/images/sinikon-standard-eccentric-angular-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/0423d3656325e8dd4f702f825bd79b2f.jpg"
           },
           "items": [
             {
@@ -1118,7 +1125,7 @@
           "groupName": "Манжеты резиновые белые",
           "commonSpecs": {
             "type": "Манжета резиновая белая",
-            "image_url": "/images/sinikon-standard-rubber-gasket.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/l1prmuo4ruiwsivt918bu4ixjjp79hx3.png"
           },
           "items": [
             {
@@ -1162,7 +1169,7 @@
           "groupName": "Заглушки",
           "commonSpecs": {
             "type": "Заглушка",
-            "image_url": "/images/sinikon-standard-plug.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/42678ace47a58aa47546a1ad6299e892.png"
           },
           "items": [
             {
@@ -1211,7 +1218,7 @@
           "groupName": "Муфты соединительные",
           "commonSpecs": {
             "type": "Муфта соединительная",
-            "image_url": "/images/sinikon-standard-coupling.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/6a3aed8f3f4da0cf17a4f487c58fcf97.png"
           },
           "items": [
             {
@@ -1246,7 +1253,7 @@
           "groupName": "Муфты ремонтные",
           "commonSpecs": {
             "type": "Муфта ремонтная",
-            "image_url": "/images/sinikon-standard-repair-coupling.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/ea3ec70fdd3bdd47a8d8cbfde1d512e2.png"
           },
           "items": [
             {
@@ -1294,7 +1301,7 @@
           "groupName": "Патрубок для унитаза",
           "commonSpecs": {
             "type": "Патрубок для унитаза",
-            "image_url": "/images/sinikon-standard-toilet-pipe.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/1ef0557324682ee294ee378bd54f82b2.jpg"
           },
           "items": [
             {
@@ -1316,7 +1323,7 @@
           "groupName": "Патрубок для унитаза с уплотнением",
           "commonSpecs": {
             "type": "Патрубок для унитаза с уплотнением",
-            "image_url": "/images/sinikon-standard-toilet-pipe.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/7a56b867f099f792cc201dad07627a6a.jpg"
           },
           "items": [
             {
@@ -1344,7 +1351,7 @@
           "groupName": "Патрубок для унитаза с эксцентрическим уплотнением (белый)",
           "commonSpecs": {
             "type": "Патрубок для унитаза с эксцентрическим уплотнением",
-            "image_url": "/images/sinikon-standard-toilet-pipe.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/85c79eb222ae83a067d385b1eaa90ad7.jpg"
           },
           "items": [
             {
@@ -1366,7 +1373,7 @@
           "groupName": "Патрубок для унитаза гофрированный белый",
           "commonSpecs": {
             "type": "Патрубок для унитаза гофрированный",
-            "image_url": "/images/sinikon-standard-toilet-pipe.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/937d6b5c53917f8fc6321fd6a7df2408.jpg"
           },
           "items": [
             {
@@ -1404,7 +1411,7 @@
           "groupName": "Патрубок компенсационный удвоенной длины",
           "commonSpecs": {
             "type": "Патрубок компенсационный удвоенной длины",
-            "image_url": "/images/sinikon-standard-compensating-pipe-long.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/676c70acf15573503c8f909f0e11b0dd.jpg"
           },
           "items": [
             {
@@ -1425,7 +1432,7 @@
           "groupName": "Патрубок компенсационный утроенной длины",
           "commonSpecs": {
             "type": "Патрубок компенсационный утроенной длины",
-            "image_url": "/images/sinikon-standard-compensating-pipe-long.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/5d1447494dd091c99d6c2b156421a17d.jpg"
           },
           "items": [
             {
@@ -1460,7 +1467,7 @@
           "groupName": "Патрубок компенсационный учетверенной длины",
           "commonSpecs": {
             "type": "Патрубок компенсационный учетверенной длины",
-            "image_url": "/images/sinikon-standard-compensating-pipe-long.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/3388fbed241d76593e7bc5c8e028bcbb.png"
           },
           "items": [
             {
@@ -1485,11 +1492,11 @@
           "seo_meta_description": "Патрубок компенсационный учетверенной длины для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
         },
         {
-          "groupName": "Отводы с патрубками",
+          "groupName": "Отводы с двумя патрубками",
           "commonSpecs": {
-            "type": "Отвод",
+            "type": "Отвод с двумя патрубками",
             "angle_deg": "87°30",
-            "image_url": "/images/sinikon-standard-outlet-elbow.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/0f9ada145a6f9001f1fe74e2a153cff6.jpg"
           },
           "items": [
             {
@@ -1498,28 +1505,88 @@
               "diameters_mm": "110/50",
               "weight_kg": 0.285,
               "pack_qty": 14
-            },
+            }
+          ],
+          "description_short": "Отвод с двумя патрубками для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "description_full": "Отвод с двумя патрубками для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "seo_slug": "otvody-s-dvumya-patrubkami",
+          "seo_title": "Отводы с двумя патрубками — Трубы и фитинги из полипропилена СИНИКОН Стандарт",
+          "seo_meta_description": "Отвод с двумя патрубками для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
+        },
+        {
+          "groupName": "Отводы с патрубком (выход вверх)",
+          "commonSpecs": {
+            "type": "Отвод с патрубком (выход вверх)",
+            "angle_deg": "87°30",
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/f66690b0e3f1801166696da6d617c6e4.jpg"
+          },
+          "items": [
             {
               "article": "551001R",
               "name": "Отвод с патрубком (выход вверх)",
               "diameters_mm": "110/50",
               "weight_kg": 0.255,
               "pack_qty": 15
-            },
+            }
+          ],
+          "description_short": "Отвод с патрубком (выход вверх) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "description_full": "Отвод с патрубком (выход вверх) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "seo_slug": "otvody-s-patrubkom-vyhod-vverh",
+          "seo_title": "Отводы с патрубком (выход вверх) — Трубы и фитинги из полипропилена СИНИКОН Стандарт",
+          "seo_meta_description": "Отвод с патрубком (выход вверх) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
+        },
+        {
+          "groupName": "Отводы с патрубком (выход назад)",
+          "commonSpecs": {
+            "type": "Отвод с патрубком (выход назад)",
+            "angle_deg": "87°30",
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/0f9ada145a6f9001f1fe74e2a153cff6.jpg"
+          },
+          "items": [
             {
               "article": "551002R",
               "name": "Отвод с патрубком (выход назад)",
               "diameters_mm": "110/50",
               "weight_kg": 0.255,
               "pack_qty": 15
-            },
+            }
+          ],
+          "description_short": "Отвод с патрубком (выход назад) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "description_full": "Отвод с патрубком (выход назад) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "seo_slug": "otvody-s-patrubkom-vyhod-nazad",
+          "seo_title": "Отводы с патрубком (выход назад) — Трубы и фитинги из полипропилена СИНИКОН Стандарт",
+          "seo_meta_description": "Отвод с патрубком (выход назад) для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
+        },
+        {
+          "groupName": "Отводы с левым патрубком",
+          "commonSpecs": {
+            "type": "Отвод с левым патрубком",
+            "angle_deg": "87°30",
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/3496ca63d6ee17cf38302d6a84683be9.jpg"
+          },
+          "items": [
             {
               "article": "552003R",
               "name": "Отвод с левым патрубком",
               "diameters_mm": "110/50",
               "weight_kg": 0.255,
               "pack_qty": 15
-            },
+            }
+          ],
+          "description_short": "Отвод с левым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "description_full": "Отвод с левым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "seo_slug": "otvody-s-levym-patrubkom",
+          "seo_title": "Отводы с левым патрубком — Трубы и фитинги из полипропилена СИНИКОН Стандарт",
+          "seo_meta_description": "Отвод с левым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
+        },
+        {
+          "groupName": "Отводы с правым патрубком",
+          "commonSpecs": {
+            "type": "Отвод с правым патрубком",
+            "angle_deg": "87°30",
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/935c561c04d214263607cc0e2bfb2502.jpg"
+          },
+          "items": [
             {
               "article": "554003R",
               "name": "Отвод с правым патрубком",
@@ -1528,17 +1595,17 @@
               "pack_qty": 15
             }
           ],
-          "description_short": "Отвод для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
-          "description_full": "Отвод для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
-          "seo_slug": "otvody-s-patrubkami",
-          "seo_title": "Отводы с патрубками — Трубы и фитинги из полипропилена СИ…",
-          "seo_meta_description": "Отвод для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
+          "description_short": "Отвод с правым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "description_full": "Отвод с правым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН.",
+          "seo_slug": "otvody-s-pravym-patrubkom",
+          "seo_title": "Отводы с правым патрубком — Трубы и фитинги из полипропилена СИНИКОН Стандарт",
+          "seo_meta_description": "Отвод с правым патрубком для Системы внутренней канализации, Трубы и фитинги из полипропилена СИНИКОН Стандарт. СИНИКОН."
         },
         {
           "groupName": "Манжеты для перехода с чугуна на ПП",
           "commonSpecs": {
             "type": "Манжета для перехода с чугуна на ПП",
-            "image_url": "/images/sinikon-standard-cast-iron-to-pp-gasket.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/8fb53999418c55e8506a90724e752c76.jpg"
           },
           "items": [
             {
@@ -1564,7 +1631,7 @@
           "groupName": "Отвод для унитаза белый с правым патрубком",
           "commonSpecs": {
             "type": "Отвод для унитаза белый с правым патрубком",
-            "image_url": "/images/sinikon-standard-toilet-elbow-sealed.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/d63397555204fb3df5797152c2a2ae9f.jpg"
           },
           "items": [
             {
@@ -1585,7 +1652,7 @@
           "groupName": "Отвод для унитаза белый с левым патрубком",
           "commonSpecs": {
             "type": "Отвод для унитаза белый с левым патрубком",
-            "image_url": "/images/sinikon-standard-toilet-elbow-sealed.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/257cbb354b2d05628f7b5c267b518ec8.jpg"
           },
           "items": [
             {
@@ -1606,7 +1673,7 @@
           "groupName": "Отвод для унитаза белый с уплотнением и заглушкой",
           "commonSpecs": {
             "type": "Отвод для унитаза белый с уплотнением и заглушкой",
-            "image_url": "/images/sinikon-standard-toilet-elbow-sealed.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/3469f06ac665e8d7927e57a13a2fdd1d.jpg"
           },
           "items": [
             {
@@ -1644,7 +1711,7 @@
           "groupName": "Отвод для унитаза с уплотнением",
           "commonSpecs": {
             "type": "Отвод для унитаза с уплотнением",
-            "image_url": "/images/sinikon-standard-toilet-elbow-sealed.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/ce5d15d4accf2719b39f222fd2929f37.png"
           },
           "items": [
             {
@@ -1690,7 +1757,7 @@
           "groupName": "Переход на трубы из НПВХ",
           "commonSpecs": {
             "type": "Переход на трубы из НПВХ",
-            "image_url": "/images/sinikon-standard-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/b2925998cb1b3b983641ef54e7ab437d.jpg"
           },
           "items": [
             {
@@ -1711,7 +1778,7 @@
           "groupName": "Переход с чугунной трубы на ПП с уплотнителем",
           "commonSpecs": {
             "type": "Переход с чугунной трубы на ПП с уплотнителем",
-            "image_url": "/images/sinikon-standard-cast-iron-to-pp-seal.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/bc8a290e5e52ad712302e48b154e3342.png"
           },
           "items": [
             {
@@ -1739,7 +1806,7 @@
           "groupName": "Кольцо резиновое 2-лепестковое",
           "commonSpecs": {
             "type": "Кольцо резиновое 2-лепестковое",
-            "image_url": "/images/sinikon-standard-rubber-ring.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/867bb3e7d85ffd2d17e168f7c07c79e1.png"
           },
           "items": [
             {
@@ -1773,7 +1840,7 @@
           "groupName": "Муфты соединения НПВХ/ПП",
           "commonSpecs": {
             "type": "Муфта соединения",
-            "image_url": "/images/sinikon-standard-pvc-to-pp-coupling.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/69c2ba71007075eb902dccbf2bec3722.jpg"
           },
           "items": [
             {
@@ -1794,7 +1861,7 @@
           "groupName": "Канализационные вытяжки",
           "commonSpecs": {
             "type": "Канализационная вытяжка",
-            "image_url": "/images/sinikon-standard-outlet.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/403d64d2939817330c8fb947acb05355.jpg"
           },
           "items": [
             {
@@ -1818,7 +1885,7 @@
           "groupName": "Клапаны воздушные (аэраторы)",
           "commonSpecs": {
             "type": "Клапан воздушный (аэратор)",
-            "image_url": "/images/sinikon-standard-air-valve.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/standart/esvhgynw0ovvv6cw4ixrd2g7g4pajnoy.png"
           },
           "items": [
             {
@@ -1858,7 +1925,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 40,
             "wall_thickness_mm": "2.0±0.4",
-            "image_url": "/images/sinikon-comfort-plus-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/62a7c03caed845fb3137c9dd1bf3dd81.jpg"
           },
           "items": [
             {
@@ -1894,7 +1961,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 50,
             "wall_thickness_mm": "2.0±0.4",
-            "image_url": "/images/sinikon-comfort-plus-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/62a7c03caed845fb3137c9dd1bf3dd81.jpg"
           },
           "items": [
             {
@@ -1940,7 +2007,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 110,
             "wall_thickness_mm": "3.8±0.5",
-            "image_url": "/images/sinikon-comfort-plus-tube.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/62a7c03caed845fb3137c9dd1bf3dd81.jpg"
           },
           "items": [
             {
@@ -1981,10 +2048,10 @@
           "seo_meta_description": "Труба однораструбная для Системы внутренней канализации, Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС. Ø110 мм. толщина стенки 3."
         },
         {
-          "groupName": "Крестовина одноплоскостная",
+          "groupName": "Крестовины одноплоскостные Комфорт Плюс",
           "commonSpecs": {
             "type": "Крестовина одноплоскостная",
-            "image_url": "/images/sinikon-comfort-plus-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/f13de68be12f508ec2658216654337e1.gif"
           },
           "items": [
             {
@@ -2034,15 +2101,15 @@
           ],
           "description_short": "Крестовина одноплоскостная для Системы внутренней канализации, Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС. СИНИКОН.",
           "description_full": "Крестовина одноплоскостная для Системы внутренней канализации, Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС. СИНИКОН.",
-          "seo_slug": "krestovina-odnoploskostnaya",
-          "seo_title": "Крестовина одноплоскостная — Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС",
+          "seo_slug": "krestoviny-odnoploskostnye-komfort-plyus",
+          "seo_title": "Крестовины одноплоскостные Комфорт Плюс — Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС",
           "seo_meta_description": "Крестовина одноплоскостная для Системы внутренней канализации, Внутренняя канализация с пониженным уровнем шума СИНИКОН КОМФОРТ ПЛЮС. СИНИКОН."
         },
         {
           "groupName": "Ревизии Комфорт Плюс",
           "commonSpecs": {
             "type": "Ревизия",
-            "image_url": "/images/sinikon-comfort-plus-revision.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/7ff894291f5f92dbf3c8bc304f7c3367.jpg"
           },
           "items": [
             {
@@ -2068,7 +2135,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "diameter_mm": 40,
-            "image_url": "/images/sinikon-comfort-plus-elbow.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/6728844ac67bcba4b234eb0775e8fdef.jpg"
           },
           "items": [
             {
@@ -2107,7 +2174,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "diameter_mm": 50,
-            "image_url": "/images/sinikon-comfort-plus-elbow.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/6728844ac67bcba4b234eb0775e8fdef.jpg"
           },
           "items": [
             {
@@ -2152,7 +2219,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "diameter_mm": 110,
-            "image_url": "/images/sinikon-comfort-plus-elbow.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/6728844ac67bcba4b234eb0775e8fdef.jpg"
           },
           "items": [
             {
@@ -2196,7 +2263,7 @@
           "groupName": "Тройники Ø40 Комфорт Плюс",
           "commonSpecs": {
             "type": "Тройник",
-            "image_url": "/images/sinikon-comfort-plus-tee.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/d0394d605206666e16955a75ab6c2f3d.gif"
           },
           "items": [
             {
@@ -2224,7 +2291,7 @@
           "groupName": "Тройники Ø50 Комфорт Плюс",
           "commonSpecs": {
             "type": "Тройник",
-            "image_url": "/images/sinikon-comfort-plus-tee.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/d0394d605206666e16955a75ab6c2f3d.gif"
           },
           "items": [
             {
@@ -2252,7 +2319,7 @@
           "groupName": "Тройники Ø110 Комфорт Плюс",
           "commonSpecs": {
             "type": "Тройник",
-            "image_url": "/images/sinikon-comfort-plus-tee.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/d0394d605206666e16955a75ab6c2f3d.gif"
           },
           "items": [
             {
@@ -2294,7 +2361,7 @@
           "groupName": "Крестовины двухплоскостные Комфорт Плюс",
           "commonSpecs": {
             "type": "Крестовина двухплоскостная",
-            "image_url": "/images/sinikon-comfort-plus-double-plane-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/3ca40c852325c5945386c635b73ffd88.jpg"
           },
           "items": [
             {
@@ -2326,7 +2393,7 @@
           "groupName": "Крестовины двухсторонние Комфорт Плюс",
           "commonSpecs": {
             "type": "Крестовина двухсторонняя",
-            "image_url": "/images/sinikon-comfort-plus-double-cross.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/89c9a5c75eb22c932715b3c2a482d4f6.png"
           },
           "items": [
             {
@@ -2346,7 +2413,7 @@
           "groupName": "Муфты ремонтные Комфорт Плюс",
           "commonSpecs": {
             "type": "Муфта ремонтная",
-            "image_url": "/images/sinikon-comfort-plus-repair-coupling.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/689c77b2afcdffed925095b588072a1a.jpg"
           },
           "items": [
             {
@@ -2370,7 +2437,7 @@
           "groupName": "Муфты соединительные Комфорт Плюс",
           "commonSpecs": {
             "type": "Муфта соединительная",
-            "image_url": "/images/sinikon-comfort-plus-coupling.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/689c77b2afcdffed925095b588072a1a.jpg"
           },
           "items": [
             {
@@ -2394,7 +2461,7 @@
           "groupName": "Патрубки компенсационные Комфорт Плюс",
           "commonSpecs": {
             "type": "Патрубок компенсационный",
-            "image_url": "/images/sinikon-comfort-plus-compensating-pipe-long.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/624724f4aae1465e5b76a5cf18d95d83.jpg"
           },
           "items": [
             {
@@ -2418,7 +2485,7 @@
           "groupName": "Заглушки Комфорт Плюс",
           "commonSpecs": {
             "type": "Заглушка",
-            "image_url": "/images/sinikon-comfort-plus-plug.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/2969ab152e8dbf7e3df28f9e393b22d8.jpg"
           },
           "items": [
             {
@@ -2447,7 +2514,7 @@
           "groupName": "Переход эксцентрический",
           "commonSpecs": {
             "type": "Переход эксцентрический",
-            "image_url": "/images/sinikon-comfort-plus-eccentric-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/7d3236fb2dbd691471e1179f0a1976c8.png"
           },
           "items": [
             {
@@ -2467,7 +2534,7 @@
           "groupName": "Переход прямой",
           "commonSpecs": {
             "type": "Переход прямой",
-            "image_url": "/images/sinikon-comfort-plus-concentric-reducer.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/9f207b29482e2ead5259b5ff774f0d63.jpg"
           },
           "items": [
             {
@@ -2486,7 +2553,7 @@
           "groupName": "Клапаны воздушные (аэраторы) Комфорт Плюс",
           "commonSpecs": {
             "type": "Клапан воздушный (аэратор)",
-            "image_url": "/images/sinikon-comfort-plus-air-valve-abs.jpg"
+            "image_url": "/images/products/vnutrennyaya-kanalizaciya/comfort/4dy3nw6xnfy4hob7c0bb5pql3e285c5k.png"
           },
           "items": [
             {

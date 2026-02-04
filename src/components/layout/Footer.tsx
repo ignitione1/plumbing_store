@@ -9,10 +9,11 @@ export function Footer() {
           {/* Logo & description */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">С</span>
-              </div>
-              <span className="text-xl font-medium text-foreground">САНТЕХНИКЪ</span>
+              <img 
+                src="/images/logo/photo_2026-01-30_18-16-12.jpg" 
+                alt="САНТЕХНИКЪ" 
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Магазин сантехнической продукции в Саратове. 

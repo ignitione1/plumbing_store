@@ -112,12 +112,11 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-2xl">С</span>
-              </div>
-              <div>
-                <span className="text-2xl font-medium text-foreground tracking-tight">САНТЕХНИКЪ</span>
-              </div>
+              <img 
+                src="/images/logo/photo_2026-01-30_18-16-12.jpg" 
+                alt="САНТЕХНИКЪ" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </Link>
 
@@ -217,10 +216,11 @@ export function Header() {
           </button>
 
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">С</span>
-            </div>
-            <span className="text-lg font-medium text-foreground">САНТЕХНИКЪ</span>
+            <img 
+              src="/images/logo/photo_2026-01-30_18-16-12.jpg" 
+              alt="САНТЕХНИКЪ" 
+              className="h-8 w-auto object-contain"
+            />
           </Link>
 
           <button

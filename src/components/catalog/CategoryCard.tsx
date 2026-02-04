@@ -17,10 +17,10 @@ export function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link
       to={`/catalog/${category.slug}`}
-      className="category-card block overflow-hidden"
+      className="category-card block overflow-hidden bg-white"
     >
       {/* Image */}
-      <div className="aspect-square bg-muted/30 flex items-center justify-center p-6">
+      <div className="aspect-square bg-white flex items-center justify-center p-6">
         <img
           src={getCategoryImageUrl(category.imageUrl)}
           alt={category.name}

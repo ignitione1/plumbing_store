@@ -8,7 +8,8 @@ import { getProductGroupImageUrl } from '@/lib/imageUtils';
 
 export default function Product() {
   const { article } = useParams<{ article: string }>();
-  const product = useCatalogProduct(article || '');
+  const decodedArticle = article ? decodeURIComponent(article) : '';
+  const product = useCatalogProduct(decodedArticle);
 
   if (!product) {
     return (

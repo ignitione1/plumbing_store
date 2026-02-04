@@ -21,9 +21,9 @@ export function ProductCard({
   inStock,
 }: ProductCardProps) {
   return (
-    <Link to={`/product/${id}`} className="product-card block">
+    <Link to={`/product/${id}`} className="product-card block bg-white">
       {/* Image */}
-      <div className="aspect-square bg-muted/30 flex items-center justify-center p-4">
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
         <img
           src={image}
           alt={title}

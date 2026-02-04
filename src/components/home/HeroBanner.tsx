@@ -76,9 +76,9 @@ export function HeroBanner() {
             >
               <div className="relative w-full h-[200px] md:h-[280px] rounded overflow-hidden bg-muted/30 flex">
                 {/* Левая часть - текст с отступом для стрелок */}
-                <div className="flex-1 flex flex-col justify-center pl-12 md:pl-16 pr-0 py-8 md:py-12 z-10 relative">
+                <div className="flex-1 flex flex-col justify-center pl-12 md:pl-16 pr-0 py-8 md:py-12 z-10 relative bg-white">
                   {/* Градиент справа для плавного перехода */}
-                  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background via-background/99 to-transparent pointer-events-none" />
+                  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white via-white/99 to-transparent pointer-events-none" />
                   <div className="max-w-lg relative z-10">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-foreground leading-tight">
                       {slide.title}

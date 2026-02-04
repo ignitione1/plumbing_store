@@ -1,6 +1,12 @@
 {
   "name": "Латунные аксиальные фитинги",
   "image_url": "/images/categories/latunnye-aksialnye-fitingi.png",
+  "geo": {
+    "city": "Саратов",
+    "region": "Саратовская область",
+    "country": "Россия",
+    "address": "ул. Большая Горная, д. 290"
+  },
   "subcategories": [
     {
       "name": "Аксиальные латунные фитинги с надвижной гайкой",
@@ -10,7 +16,7 @@
           "groupName": "Гильзы",
           "commonSpecs": {
             "type": "Гильза аксиальная",
-            "image_url": "/images/sinikon-brass-sleeve.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/383045a9c5122810be5b87b0d79ead28.png"
           },
           "items": [
             {
@@ -56,7 +62,7 @@
           "groupName": "Водорозетка проходная",
           "commonSpecs": {
             "type": "Водорозетка проходная аксиальная",
-            "image_url": "/images/sinikon-brass-water-outlet-pass-through.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/pey0558298d64v3ys3rigd3j0vvujnie.png"
           },
           "items": [
             {
@@ -86,7 +92,7 @@
           "groupName": "Водорозетка удлиненная",
           "commonSpecs": {
             "type": "Водорозетка удлиненная аксиальная",
-            "image_url": "/images/sinikon-brass-water-outlet-elongated.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/cqxpg37m94vwulsvo28xwizcfjy4nj75.png"
           },
           "items": [
             {
@@ -116,7 +122,7 @@
           "groupName": "Прямые муфты",
           "commonSpecs": {
             "type": "Прямая муфта",
-            "image_url": "/images/sinikon-brass-axial-coupling.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/0828bb19d5618c2651843bb58b73a419.png"
           },
           "items": [
             {
@@ -162,7 +168,7 @@
           "groupName": "Муфты с переходом на наружную резьбу",
           "commonSpecs": {
             "type": "Муфта аксиальная с переходом на наружную резьбу",
-            "image_url": "/images/sinikon-brass-elbow-hp.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/c420e9fb683a85b40cd3959e5d079913.png"
           },
           "items": [
             {
@@ -266,7 +272,7 @@
           "groupName": "Переходные муфты",
           "commonSpecs": {
             "type": "Муфта аксиальная переходная",
-            "image_url": "/images/sinikon-brass-reducing-coupling.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/45f685c99059fe85a034e88e52f8b803.png"
           },
           "items": [
             {
@@ -368,7 +374,7 @@
           "groupName": "Муфты с переходом на внутреннюю резьбу",
           "commonSpecs": {
             "type": "Муфта аксиальная с переходом на внутреннюю резьбу",
-            "image_url": "/images/sinikon-brass-elbow-bp.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/c702425b7691c44dd2297c8d939ae8d8.png"
           },
           "items": [
             {
@@ -462,7 +468,7 @@
           "groupName": "Муфты с накидной гайкой",
           "commonSpecs": {
             "type": "Муфта аксиальная с накидной гайкой",
-            "image_url": "/images/sinikon-brass-compression-fitting.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/968efc1b099d4ff1bd2d7750980e05e2.png"
           },
           "items": [
             {
@@ -546,7 +552,7 @@
           "groupName": "Тройники аксиальные",
           "commonSpecs": {
             "type": "Тройник аксиальный",
-            "image_url": "/images/sinikon-brass-tee.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/019c674ceee704a217d582d7f9149ac2.png"
           },
           "items": [
             {
@@ -596,7 +602,7 @@
           "groupName": "Тройники аксиальные переходные",
           "commonSpecs": {
             "type": "Тройник аксиальный переходной",
-            "image_url": "/images/sinikon-brass-reducing-tee.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/041cb49e0875f6dcfb1c39eb7dd086d5.png"
           },
           "items": [
             {
@@ -886,7 +892,7 @@
           "groupName": "Тройники аксиальные с переходом на внутреннюю резьбу",
           "commonSpecs": {
             "type": "Тройник аксиальный с переходом на внутреннюю резьбу",
-            "image_url": "/images/sinikon-brass-tee-bp.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/602f974aaf2c04549831b3e71edd3614.png"
           },
           "items": [
             {
@@ -940,7 +946,7 @@
           "groupName": "Угольники с переходом на наружную резьбу",
           "commonSpecs": {
             "type": "Угольник аксиальный с переходом на наружную резьбу",
-            "image_url": "/images/sinikon-brass-elbow-hp-angled.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/34590bafbb35bef7b7ab69205a81acca.png"
           },
           "items": [
             {
@@ -1024,7 +1030,7 @@
           "groupName": "Угольники с переходом на внутреннюю резьбу",
           "commonSpecs": {
             "type": "Угольник аксиальный с переходом на внутреннюю резьбу",
-            "image_url": "/images/sinikon-brass-elbow-bp-angled.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/bc6a82ff6a6049c20ab03e3859ea1ee8.png"
           },
           "items": [
             {
@@ -1098,7 +1104,7 @@
           "groupName": "Угольники аксиальные",
           "commonSpecs": {
             "type": "Угольник аксиальный",
-            "image_url": "/images/sinikon-brass-elbow.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/f8b9b238eea31c94a0eb7e8541b24c47.png"
           },
           "items": [
             {
@@ -1144,7 +1150,7 @@
           "groupName": "Угольники с накидной гайкой",
           "commonSpecs": {
             "type": "Угольник аксиальный с накидной гайкой",
-            "image_url": "/images/sinikon-brass-compression-elbow.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/6e2c3e3014d201202bf177b1e89dd529.png"
           },
           "items": [
             {
@@ -1198,7 +1204,7 @@
           "groupName": "Муфты с переходом на евроконус",
           "commonSpecs": {
             "type": "Муфта аксиальная с переходом на евроконус",
-            "image_url": "/images/sinikon-brass-eurocone-coupling.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/b715344d7810cd068079248d99624977.png"
           },
           "items": [
             {
@@ -1232,7 +1238,7 @@
           "groupName": "Евроконусы коллекторные",
           "commonSpecs": {
             "type": "Евроконусы коллекторные",
-            "image_url": "/images/sinikon-brass-collector-eurocone.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/b715344d7810cd068079248d99624977.png"
           },
           "items": [
             {
@@ -1258,7 +1264,7 @@
           "groupName": "Угольник Г-образный для подключения радиатора",
           "commonSpecs": {
             "type": "Угольник Г-образный аксиальный для подключения радиатора",
-            "image_url": "/images/sinikon-brass-radiator-elbow.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/7a054f93574b0e7969bad1a313a6ff41.png"
           },
           "items": [
             {
@@ -1304,7 +1310,7 @@
           "groupName": "Тройник Т-образный аксиальный, для подключения радиатора",
           "commonSpecs": {
             "type": "Тройник Т-образный аксиальный для подключения радиатора",
-            "image_url": "/images/sinikon-brass-radiator-tee.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/91fe49ba297bb2db4f11c922d90ba384.png"
           },
           "items": [
             {
@@ -1334,7 +1340,7 @@
           "groupName": "Гайка для подключения радиатора евроконус",
           "commonSpecs": {
             "type": "Гайка для подключения радиатора евроконус",
-            "image_url": "/images/sinikon-brass-radiator-tamka.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/e5c38203555011ba82ed0690a0e721f2.png"
           },
           "items": [
             {
@@ -1357,7 +1363,7 @@
           "groupName": "Водорозетка",
           "commonSpecs": {
             "type": "Водорозетка аксиальная",
-            "image_url": "/images/sinikon-brass-air-vent.jpg"
+            "image_url": "/images/products/latunnye-aksialnye-fitingi/411c849661944250ac253ea28a98325c.png"
           },
           "items": [
             {

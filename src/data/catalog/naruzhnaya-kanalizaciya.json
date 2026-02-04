@@ -1,6 +1,12 @@
 {
   "name": "Системы наружной канализации",
   "image_url": "/images/categories/naruzhnaya-kanalizaciya.png",
+  "geo": {
+    "city": "Саратов",
+    "region": "Саратовская область",
+    "country": "Россия",
+    "address": "ул. Большая Горная, д. 290"
+  },
   "subcategories": [
     {
       "name": "Трубы и фитинги из полипропилена СИНИКОН Универсал",
@@ -12,7 +18,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 110,
             "wall_thickness_mm": "3.4",
-            "image_url": "/images/sinikon-universal-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/da298e8c6c17dbbbd1b3d9a73f2585ea.jpg"
           },
           "items": [
             {
@@ -53,7 +59,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 160,
             "wall_thickness_mm": "4.2",
-            "image_url": "/images/sinikon-universal-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/da298e8c6c17dbbbd1b3d9a73f2585ea.jpg"
           },
           "items": [
             {
@@ -93,7 +99,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "diameter_mm": 110,
-            "image_url": "/images/sinikon-universal-elbow.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/1ecd99d6dcedaada21dfef9a11053a54.jpg"
           },
           "items": [
             {
@@ -128,7 +134,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "diameter_mm": 160,
-            "image_url": "/images/sinikon-universal-elbow.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/1ecd99d6dcedaada21dfef9a11053a54.jpg"
           },
           "items": [
             {
@@ -153,7 +159,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "diameter_mm": 110,
-            "image_url": "/images/sinikon-universal-tee.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/87e37bcdeef65149c7ab61cf44a86fb1.jpg"
           },
           "items": [
             {
@@ -180,7 +186,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "diameter_mm": 160,
-            "image_url": "/images/sinikon-universal-tee.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/87e37bcdeef65149c7ab61cf44a86fb1.jpg"
           },
           "items": [
             {
@@ -218,7 +224,7 @@
           "groupName": "Муфты ремонтные Универсал",
           "commonSpecs": {
             "type": "Муфта ремонтная",
-            "image_url": "/images/sinikon-universal-repair-coupling.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/7751cc9f63cd8ddc860990d483d04140.jpg"
           },
           "items": [
             {
@@ -242,7 +248,7 @@
           "groupName": "Муфты соединительные Универсал",
           "commonSpecs": {
             "type": "Муфта соединительная",
-            "image_url": "/images/sinikon-universal-coupling.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/29d3a96cf5aba51c38275373db88b94b.jpg"
           },
           "items": [
             {
@@ -261,7 +267,7 @@
           "groupName": "Заглушки Универсал",
           "commonSpecs": {
             "type": "Заглушка",
-            "image_url": "/images/sinikon-universal-plug.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/602223bc11ce15b8649cf7618be26df3.jpg"
           },
           "items": [
             {
@@ -285,7 +291,7 @@
           "groupName": "Ревизии Универсал",
           "commonSpecs": {
             "type": "Ревизия",
-            "image_url": "/images/sinikon-universal-revision.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/e4242010f36e6f1da4ad4780ee68514b.jpg"
           },
           "items": [
             {
@@ -306,10 +312,10 @@
           "seo_meta_description": "Ревизия для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН."
         },
         {
-          "groupName": "Переходы Универсал",
+          "groupName": "Переходы эксцентрические Универсал",
           "commonSpecs": {
-            "type": "Переход концентрический",
-            "image_url": "/images/sinikon-universal-reducer.jpg"
+            "type": "Переход эксцентрический",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/universal/1af195bfb7ff6678964e8f45db61d5d2.png"
           },
           "items": [
             {
@@ -318,11 +324,11 @@
               "pack_qty": 10
             }
           ],
-          "description_short": "Переход концентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН.",
-          "description_full": "Переход концентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН.",
-          "seo_slug": "perehody-universal",
-          "seo_title": "Переходы Универсал — Трубы и фитинги из полипропилена СИН…",
-          "seo_meta_description": "Переход концентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН."
+          "description_short": "Переход эксцентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН.",
+          "description_full": "Переход эксцентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН.",
+          "seo_slug": "perekhody-ekstsentricheskie-universal",
+          "seo_title": "Переходы эксцентрические Универсал — Трубы и фитинги из полипропилена СИНИКОН Универсал | СИНИКОН",
+          "seo_meta_description": "Переход эксцентрический для Системы наружной канализации, Трубы и фитинги из полипропилена СИНИКОН Универсал. СИНИКОН."
         }
       ]
     },
@@ -336,7 +342,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 110,
             "wall_thickness_mm": "3.2",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -377,7 +383,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 160,
             "wall_thickness_mm": "4.0",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -418,7 +424,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 200,
             "wall_thickness_mm": "4.9",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -454,7 +460,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 250,
             "wall_thickness_mm": "6.2",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -490,7 +496,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 315,
             "wall_thickness_mm": "7.7",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -526,7 +532,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 400,
             "wall_thickness_mm": "9.8",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -557,7 +563,7 @@
             "type": "Труба однораструбная",
             "diameter_mm": 500,
             "wall_thickness_mm": "12.3",
-            "image_url": "/images/sinikon-pvc-tube.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6a98c037aea1fefab73288ddda549e2f.jpg"
           },
           "items": [
             {
@@ -582,7 +588,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "15°",
-            "image_url": "/images/sinikon-pvc-elbow-15.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/17455ec3686cefd1faa057e193363e87.jpg"
           },
           "items": [
             {
@@ -632,7 +638,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "30°",
-            "image_url": "/images/sinikon-pvc-elbow-30.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/17455ec3686cefd1faa057e193363e87.jpg"
           },
           "items": [
             {
@@ -682,7 +688,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "45°",
-            "image_url": "/images/sinikon-pvc-elbow-45.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/17455ec3686cefd1faa057e193363e87.jpg"
           },
           "items": [
             {
@@ -732,7 +738,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "67°",
-            "image_url": "/images/sinikon-pvc-elbow-67.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/17455ec3686cefd1faa057e193363e87.jpg"
           },
           "items": [
             {
@@ -762,7 +768,7 @@
           "commonSpecs": {
             "type": "Отвод",
             "angle": "87°30'",
-            "image_url": "/images/sinikon-pvc-elbow-87.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/17455ec3686cefd1faa057e193363e87.jpg"
           },
           "items": [
             {
@@ -812,7 +818,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "angle": "45°",
-            "image_url": "/images/sinikon-pvc-tee-45.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/f98a4a99f3be669c7178e4fbdf73adec.jpg"
           },
           "items": [
             {
@@ -952,7 +958,7 @@
           "commonSpecs": {
             "type": "Тройник",
             "angle": "87°30'",
-            "image_url": "/images/sinikon-pvc-tee-87.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/f98a4a99f3be669c7178e4fbdf73adec.jpg"
           },
           "items": [
             {
@@ -1086,7 +1092,7 @@
           "groupName": "Заглушки НПВХ",
           "commonSpecs": {
             "type": "Заглушка",
-            "image_url": "/images/sinikon-pvc-plug.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/d09f8be753a3f92b3c1af7d7135d1595.jpg"
           },
           "items": [
             {
@@ -1135,7 +1141,7 @@
           "groupName": "Муфты соединительные НПВХ",
           "commonSpecs": {
             "type": "Муфта соединительная",
-            "image_url": "/images/sinikon-pvc-coupling.jpg"
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/28b2f1bdb56f324bcb3c50e721965cbf.jpg"
           },
           "items": [
             {
@@ -1164,6 +1170,240 @@
           "seo_slug": "mufty-soedinitelnye-npvh",
           "seo_title": "Муфты соединительные НПВХ — Трубы и фитинги из НПВХ | СИН…",
           "seo_meta_description": "Муфта соединительная для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Обратный клапан",
+          "commonSpecs": {
+            "type": "Обратный клапан",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/6d71c4e66257dad72d556a7234d364be.jpg"
+          },
+          "items": [
+            {
+              "article": "10202500",
+              "diameter_mm": 50
+            },
+            {
+              "article": "10202502",
+              "diameter_mm": 110
+            },
+            {
+              "article": "10202504",
+              "diameter_mm": 160
+            },
+            {
+              "article": "10402000",
+              "diameter_mm": 200
+            }
+          ],
+          "description_short": "Обратный клапан для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Обратный клапан для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "obratnyy-klapan",
+          "seo_title": "Обратный клапан — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Обратный клапан для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Переход на асбестоцементные трубы",
+          "commonSpecs": {
+            "type": "Переход",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/90f6ea35141ac528f9c5b873d5963a1a.jpg"
+          },
+          "items": [
+            {
+              "article": "20410",
+              "diameter_mm": "110х138"
+            },
+            {
+              "article": "22410",
+              "diameter_mm": "160х194"
+            },
+            {
+              "article": "23410",
+              "diameter_mm": "200х250"
+            },
+            {
+              "article": "24400",
+              "diameter_mm": "250х315"
+            },
+            {
+              "article": "25400",
+              "diameter_mm": "315х400"
+            }
+          ],
+          "description_short": "Переход на асбестоцементные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Переход на асбестоцементные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "perekhod-na-asbestotsementnye-truby",
+          "seo_title": "Переход на асбестоцементные трубы — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Переход на асбестоцементные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Уплотнение для перехода на чугун",
+          "commonSpecs": {
+            "type": "Уплотнение",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/7521e4d28969adf08f455c6c93fea239.jpg"
+          },
+          "items": [
+            {
+              "article": "UT.110.R",
+              "diameter_mm": 110
+            },
+            {
+              "article": "22460",
+              "diameter_mm": 160
+            },
+            {
+              "article": "23460",
+              "diameter_mm": 200
+            },
+            {
+              "article": "24500",
+              "diameter_mm": 250
+            },
+            {
+              "article": "25500",
+              "diameter_mm": 315
+            }
+          ],
+          "description_short": "Уплотнение для перехода на чугун для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Уплотнение для перехода на чугун для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "uplotnenie-dlya-perekhoda-na-chugun",
+          "seo_title": "Уплотнение для перехода на чугун — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Уплотнение для перехода на чугун для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Муфты ремонтные НПВХ",
+          "commonSpecs": {
+            "type": "Муфта ремонтная",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/4804660c934cc3fb3467450ba0eed6b2.jpg"
+          },
+          "items": [
+            {
+              "article": "20180",
+              "diameter_mm": 110
+            },
+            {
+              "article": "22180",
+              "diameter_mm": 160
+            },
+            {
+              "article": "23180",
+              "diameter_mm": 200
+            },
+            {
+              "article": "24180",
+              "diameter_mm": 250
+            },
+            {
+              "article": "25180",
+              "diameter_mm": 315
+            },
+            {
+              "article": "26180",
+              "diameter_mm": 400
+            },
+            {
+              "article": "27180",
+              "diameter_mm": 500
+            }
+          ],
+          "description_short": "Муфты ремонтные НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Муфты ремонтные НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "mufty-remontnye-npvh",
+          "seo_title": "Муфты ремонтные НПВХ — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Муфты ремонтные НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Переходы НПВХ",
+          "commonSpecs": {
+            "type": "Переход",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/860323029af5fc864a64a7d32b972c56.jpg"
+          },
+          "items": [
+            {
+              "article": "21280",
+              "diameter_mm": "160х110"
+            },
+            {
+              "article": "23280",
+              "diameter_mm": "200х160"
+            },
+            {
+              "article": "24280",
+              "diameter_mm": "250х200"
+            },
+            {
+              "article": "25280",
+              "diameter_mm": "315х250"
+            },
+            {
+              "article": "26280",
+              "diameter_mm": "400х315"
+            },
+            {
+              "article": "27290",
+              "diameter_mm": "500х400"
+            }
+          ],
+          "description_short": "Переходы НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Переходы НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "perekhody-npvh",
+          "seo_title": "Переходы НПВХ — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Переходы НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Переходы на чугунные трубы",
+          "commonSpecs": {
+            "type": "Переход",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/c01b1c06c73838c8f9b775ca86923246.jpg"
+          },
+          "items": [
+            {
+              "article": "20440",
+              "diameter_mm": "110х124"
+            },
+            {
+              "article": "22440",
+              "diameter_mm": "160х187"
+            },
+            {
+              "article": "23440",
+              "diameter_mm": "200х242"
+            }
+          ],
+          "description_short": "Переходы на чугунные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Переходы на чугунные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "perekhody-na-chugunnye-truby",
+          "seo_title": "Переходы на чугунные трубы — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Переходы на чугунные трубы для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
+        },
+        {
+          "groupName": "Ревизии НПВХ",
+          "commonSpecs": {
+            "type": "Ревизия",
+            "image_url": "/images/products/naruzhnaya-kanalizaciya/NPVH/d3453c35dd32f5c25578e7f33af9659d.png"
+          },
+          "items": [
+            {
+              "article": "20160",
+              "diameter_mm": 110
+            },
+            {
+              "article": "22160",
+              "diameter_mm": 160
+            },
+            {
+              "article": "23160",
+              "diameter_mm": 200
+            },
+            {
+              "article": "24160",
+              "diameter_mm": 250
+            }
+          ],
+          "description_short": "Ревизии НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "description_full": "Ревизии НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН.",
+          "seo_slug": "revizii-npvh",
+          "seo_title": "Ревизии НПВХ — Трубы и фитинги из НПВХ | СИНИКОН",
+          "seo_meta_description": "Ревизии НПВХ для Системы наружной канализации, Трубы и фитинги из НПВХ. СИНИКОН."
         }
       ]
     },
@@ -1175,7 +1415,7 @@
           "groupName": "Хомуты металлические с резиновой прокладкой (стандартные)",
           "commonSpecs": {
             "type": "Хомут металлический с резиновой прокладкой",
-            "image_url": "/images/sinikon-metal-clamp.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/22505.100@2x.jpg"
           },
           "items": [
             {
@@ -1261,7 +1501,7 @@
           "groupName": "Хомуты металлические с резиновой прокладкой (двойные)",
           "commonSpecs": {
             "type": "Хомут металлический с резиновой прокладкой",
-            "image_url": "/images/sinikon-metal-clamp-double.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/eguvuvzv1zp2qc451cyujlq00djanmth.jpg"
           },
           "items": [
             {
@@ -1299,7 +1539,7 @@
           "groupName": "Хомуты с комбинированной планкой",
           "commonSpecs": {
             "type": "Хомут с резиновой прокладкой и комбинированной планкой",
-            "image_url": "/images/sinikon-combined-clamp.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/516_original.jpg"
           },
           "items": [
             {
@@ -1331,7 +1571,7 @@
           "groupName": "Фиксаторы для труб и серые хомуты",
           "commonSpecs": {
             "type": "Фиксаторы для труб и серые хомуты",
-            "image_url": "/images/sinikon-fixator.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/276377_big_1607084228.jpg"
           },
           "items": [
             {
@@ -1373,14 +1613,15 @@
           "description_short": "Фиксаторы для труб и серые хомуты для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
           "description_full": "Фиксаторы для труб и серые хомуты для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
           "seo_slug": "fiksatory-dlya-trub-i-serye-homuty",
-          "seo_title": "Фиксаторы для труб и серые хомуты — Инструмент и крепеж |…",
+          "seo_title": "Фиксаторы для труб и серые хомуты — Инструмент и крепеж | СИНИКОН",
           "seo_meta_description": "Фиксаторы для труб и серые хомуты для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
         },
         {
           "groupName": "Хомуты «Комфорт Плюс»",
           "commonSpecs": {
             "type": "Хомут «Комфорт Плюс»",
-            "screw_size": "M10"
+            "screw_size": "M10",
+            "image_url": "/images/products/instrumernt-i-krep/RG008TFRS1M123.jpg"
           },
           "items": [
             {
@@ -1406,7 +1647,8 @@
           "groupName": "Хомут \"Комфорт Плюс\" со шпилькой и дюбелем (белый)",
           "commonSpecs": {
             "type": "Хомут «Комфорт Плюс» со шпилькой и дюбелем",
-            "screw_size": "M10"
+            "screw_size": "M10",
+            "image_url": "/images/products/instrumernt-i-krep/images.jpg"
           },
           "items": [
             {
@@ -1433,26 +1675,29 @@
           "commonSpecs": {
             "type": "Муфта противопожарная",
             "fire_resistance_min": 180,
-            "image_url": "/images/sinikon-firestop-coupling.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/234234.jpg"
           },
           "items": [
             {
               "article": "ФЕНИКС СИНК-50",
               "height_mm": 67,
               "tube_diameter_mm": 50,
-              "pack_qty": 1
+              "pack_qty": 1,
+              "image_url": "/images/products/instrumernt-i-krep/feniks-sink-50.jpg"
             },
             {
               "article": "ФЕНИКС СИНК-110",
               "height_mm": 127,
               "tube_diameter_mm": 110,
-              "pack_qty": 1
+              "pack_qty": 1,
+              "image_url": "/images/products/instrumernt-i-krep/feniks-sink-110.jpg"
             },
             {
               "article": "ФЕНИКС СИНК-160",
               "height_mm": 177,
               "tube_diameter_mm": 160,
-              "pack_qty": 1
+              "pack_qty": 1,
+              "image_url": "/images/products/instrumernt-i-krep/feniks-sink-160.jpg"
             }
           ],
           "description_short": "Муфта противопожарная для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
@@ -1466,54 +1711,75 @@
           "commonSpecs": {
             "type": "Муфта противопожарная",
             "fire_resistance_min": 180,
-            "image_url": "/images/sinikon-firestop-coupling-spark.jpg"
+            "image_url": "/images/products/instrumernt-i-krep/01-32110-38---3.jpg"
           },
           "items": [
             {
               "article": "СПАРК 01-32050-44",
               "tube_diameter_mm": 50,
               "height_mm": 60,
-              "pack_qty": 1
+              "pack_qty": 1,
+              "image_url": "/images/products/instrumernt-i-krep/01-32050-44---3.jpg"
             },
             {
               "article": "СПАРК 01-32110-38",
               "tube_diameter_mm": 110,
               "height_mm": 60,
-              "pack_qty": 1
+              "pack_qty": 1,
+              "image_url": "/images/products/instrumernt-i-krep/01-32110-38---3.jpg"
             }
           ],
           "description_short": "Муфта противопожарная для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
-          "description_full": "Муфта противопожарная для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
           "seo_slug": "mufty-protivopozarnye-spark",
           "seo_title": "Муфты противопожарные СПАРК — Инструмент и крепеж | СИНИКОН",
           "seo_meta_description": "Муфта противопожарная для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
         },
         {
-          "groupName": "Смазка Синиконовая",
+          "groupName": "Хомуты страховочные для заглушки",
           "commonSpecs": {
-            "type": "Смазка Синиконовая"
+            "type": "Хомут страховочный для заглушки",
+            "image_url": "/images/products/instrumernt-i-krep/8vf79vq9jppp6kse7htgmbecwcf17w5m.png"
+          },
+          "items": [
+            {
+              "article": "SZ400.R",
+              "diameter_mm": 110,
+              "pack_qty": 10,
+              "image_url": "/images/products/instrumernt-i-krep/8vf79vq9jppp6kse7htgmbecwcf17w5m.png"
+            }
+          ],
+          "description_short": "Хомуты страховочные для заглушки для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
+          "description_full": "Хомуты страховочные для заглушки для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
+          "seo_slug": "homuty-strahovochnye-dlya-zaglushki",
+          "seo_title": "Хомуты страховочные для заглушки — Инструмент и крепеж | СИНИКОН",
+          "seo_meta_description": "Хомуты страховочные для заглушки для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
+        },
+        {
+          "groupName": "Смазка силиконовая",
+          "commonSpecs": {
+            "type": "Смазка силиконовая"
           },
           "items": [
             {
               "article": "900003.R",
-              "name": "Смазка Синиконовая в тубе",
+              "name": "Смазка силиконовая в тубе",
               "mass_g": 250,
               "pack_qty": 32,
               "image_url": "/images/sinikon-lubricant-tube.jpg"
             },
             {
               "article": "900003.RA",
-              "name": "Смазка Синиконовая аэрозольная",
+              "name": "Смазка силиконовая аэрозольная",
               "mass_g": 400,
               "pack_qty": 12,
               "image_url": "/images/sinikon-lubricant-aerosol.jpg"
             }
           ],
-          "description_short": "Смазка Синиконовая для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
-          "description_full": "Смазка Синиконовая для Системы наружной канализации, Инструмент и крепеж. СИНИКОН.",
-          "seo_slug": "smazka-sinikonovaya",
-          "seo_title": "Смазка Синиконовая — Инструмент и крепеж | СИНИКОН",
-          "seo_meta_description": "Смазка Синиконовая для Системы наружной канализации, Инструмент и крепеж. СИНИКОН."
+          "description_short": "Смазка силиконовая для Системы наружной канализации, Инструменты и крепеж. СИНИКОН.",
+          "description_full": "Смазка силиконовая для Системы наружной канализации, Инструменты и крепеж. СИНИКОН.",
+          "seo_slug": "smazka-silikonovaya",
+          "seo_title": "Смазка силиконовая — Инструменты и крепеж | СИНИКОН",
+          "seo_meta_description": "Смазка силиконовая для Системы наружной канализации, Инструменты и крепеж. СИНИКОН."
         }
       ]
     }

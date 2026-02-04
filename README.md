@@ -60,6 +60,38 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Команды запуска
+
+### Локальная разработка
+```sh
+# Установка зависимостей (первый раз)
+npm install
+
+# Запуск dev-сервера
+npm run dev
+```
+
+### Сборка проекта
+```sh
+# Production сборка
+npm run build
+
+# Development сборка
+npm run build:dev
+```
+
+### Запуск через Docker
+```sh
+# Сборка и запуск контейнера
+docker-compose up --build
+
+# Запуск в фоновом режиме
+docker-compose up -d
+
+# Остановка
+docker-compose down
+```
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.

@@ -1,6 +1,12 @@
 {
   "name": "Трубы PE-X и PE-RT",
   "image_url": "/images/categories/truby-pe-x-pe-rt.png",
+  "geo": {
+    "city": "Саратов",
+    "region": "Саратовская область",
+    "country": "Россия",
+    "address": "ул. Большая Горная, д. 290"
+  },
   "subcategories": [
     {
       "name": "Трубы SINIKON THERMOLINE PE-Xa EVOH",
@@ -10,7 +16,7 @@
           "groupName": "Трубы PE-Xa EVOH SDR8/S3.5",
           "commonSpecs": {
             "type": "Труба PE-Xa EVOH",
-            "image_url": "/images/sinikon-pexa-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/tvqg8zwg396uowg76qsq26zvgqvytw0s.png"
           },
           "items": [
             {
@@ -44,7 +50,7 @@
           "groupName": "Трубы PE-Xa EVOH SDR7.4/S3.2",
           "commonSpecs": {
             "type": "Труба PE-Xa EVOH",
-            "image_url": "/images/sinikon-pexa-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/tvqg8zwg396uowg76qsq26zvgqvytw0s.png"
           },
           "items": [
             {
@@ -102,7 +108,7 @@
           "groupName": "Трубы PE-Xb EVOH SDR8/S3.5",
           "commonSpecs": {
             "type": "Труба PE-Xb EVOH",
-            "image_url": "/images/sinikon-pexb-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/tvqg8zwg396uowg76qsq26zvgqvytw0s.png"
           },
           "items": [
             {
@@ -138,7 +144,7 @@
           "groupName": "Трубы PE-Xb EVOH SDR7.4/S3.2",
           "commonSpecs": {
             "type": "Труба PE-Xb EVOH",
-            "image_url": "/images/sinikon-pexb-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/tvqg8zwg396uowg76qsq26zvgqvytw0s.png"
           },
           "items": [
             {
@@ -198,7 +204,7 @@
           "groupName": "Трубы PE-RT Тип I",
           "commonSpecs": {
             "type": "Труба PE-RT Тип I",
-            "image_url": "/images/sinikon-pert-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/ee3c94f7bddc520ee0669b19cf0eb183.png"
           },
           "items": [
             {
@@ -234,7 +240,7 @@
           "groupName": "Трубы PROLINE PE-RT Тип II EVOH",
           "commonSpecs": {
             "type": "Труба PROLINE PE-RT Тип II EVOH",
-            "image_url": "/images/sinikon-pert2-tube.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/ee3c94f7bddc520ee0669b19cf0eb183.png"
           },
           "items": [
             {
@@ -275,7 +281,7 @@
           "groupName": "Фиксаторы 90°",
           "commonSpecs": {
             "type": "Фиксатор 90°",
-            "image_url": "/images/sinikon-pex-fix-90.jpg"
+            "image_url": "/images/products/truby-pe-x-pe-rt/image-fiksator-plastik-90gr-20.jpg"
           },
           "items": [
             {

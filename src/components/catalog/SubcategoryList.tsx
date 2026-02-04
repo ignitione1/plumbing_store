@@ -31,10 +31,10 @@ export function SubcategoryList({ subcategories, categorySlug }: SubcategoryList
             <Link
               key={subcategory.id}
               to={`/catalog/${categorySlug}/${subcategory.slug}`}
-              className="border border-border rounded overflow-hidden hover:border-primary/30 transition-colors block"
+              className="border border-border rounded overflow-hidden hover:border-primary/30 transition-colors block bg-white"
             >
               {/* Image */}
-              <div className="aspect-video bg-muted/30 flex items-center justify-center p-4">
+              <div className="aspect-video bg-white flex items-center justify-center p-4">
                 <img
                   src={getSubcategoryImageUrl(subcategory.imageUrl)}
                   alt={subcategory.name}

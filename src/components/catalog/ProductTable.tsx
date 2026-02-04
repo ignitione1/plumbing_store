@@ -79,7 +79,7 @@ export function ProductTable({ products, categorySlug }: ProductTableProps) {
               <tr key={product.article} className="border-b border-border hover:bg-muted/30">
                 <td className="text-center py-3 px-4">
                   <Link
-                    to={`/product/${product.article}`}
+                    to={`/product/${encodeURIComponent(product.article)}`}
                     className="text-primary hover:underline font-mono text-sm"
                   >
                     {product.article}
@@ -94,7 +94,7 @@ export function ProductTable({ products, categorySlug }: ProductTableProps) {
                 ))}
                 <td className="text-center py-3 px-4">
                   <Link
-                    to={`/product/${product.article}`}
+                    to={`/product/${encodeURIComponent(product.article)}`}
                     className="text-sm text-primary hover:underline"
                   >
                     Подробнее

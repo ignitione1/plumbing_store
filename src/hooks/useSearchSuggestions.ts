@@ -134,7 +134,7 @@ export function useSearchSuggestions(query: string, limit: number = 7): SearchSu
           type: 'product',
           title: matchText || product.article,
           subtitle: group?.name || '',
-          url: `/product/${product.article}`,
+          url: `/product/${encodeURIComponent(product.article)}`,
           article: product.article,
           score: matchScore,
         });

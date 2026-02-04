@@ -141,7 +141,7 @@
 
   /* Карточка категории как valtec */
   .category-card {
-    @apply bg-card border border-border rounded-md p-4;
+    @apply bg-white border border-border rounded-md p-4;
     @apply transition-all duration-200;
   }
 
@@ -157,7 +157,7 @@
 
   /* Карточка товара */
   .product-card {
-    @apply bg-card border border-border rounded-md overflow-hidden;
+    @apply bg-white border border-border rounded-md overflow-hidden;
     @apply transition-all duration-200;
   }
 

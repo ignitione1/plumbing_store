@@ -54,6 +54,68 @@ export function normalizeCatalogData(): CatalogCategory[] {
 
     const sinikonSlug = 'sinikon';
 
+    // Группы товаров для новой подкатегории "Инструменты и крепеж"
+    const toolsAndFastenersGroupNames = [
+      'Хомуты с комбинированной планкой',
+      'Фиксаторы для труб и серые хомуты',
+      'Хомут "Комфорт Плюс" со шпилькой и дюбелем (белый)',
+      'Хомуты «Комфорт Плюс»',
+      'Муфты противопожарные ФЕНИКС',
+      'Муфты противопожарные СПАРК',
+      'Хомуты металлические с резиновой прокладкой (двойные)',
+      'Хомуты металлические с резиновой прокладкой (стандартные)',
+      'Хомуты страховочные для заглушки',
+      'Смазка силиконовая',
+    ];
+
+    // Функция для преобразования группы товаров
+    const transformProductGroup = (
+      group: any,
+      categorySlug: string,
+      subcategorySlug: string
+    ): ProductGroupNormalized => {
+      const groupSlug = group.seo_slug || generateSlug(group.groupName);
+
+      // Трансформируем items в CatalogProduct
+      const items: CatalogProduct[] = group.items.map((item: any) => {
+        // Объединяем commonSpecs и характеристики item
+        const specs: Record<string, any> = {
+          ...group.commonSpecs,
+          ...item,
+        };
+
+        return {
+          article: item.article,
+          groupId: groupSlug,
+          categorySlug,
+          subcategorySlug,
+          groupSlug,
+          specs,
+          ...item,
+        };
+      });
+
+      return {
+        id: groupSlug,
+        groupName: group.groupName,
+        slug: groupSlug,
+        categorySlug,
+        subcategorySlug,
+        commonSpecs: group.commonSpecs,
+        items,
+        descriptionShort: group.description_short,
+        descriptionFull: group.description_full,
+        seoSlug: group.seo_slug,
+        seoTitle: group.seo_title,
+        seoMetaDescription: group.seo_meta_description,
+        imageUrl: group.commonSpecs.image_url,
+      };
+    };
+
+    // Собираем группы товаров для новой подкатегории "Инструменты и крепеж"
+    const toolsAndFastenersGroups: ProductGroupNormalized[] = [];
+    const toolsAndFastenersSubcategorySlug = 'instrumenty-i-krepezh';
+
     // Преобразуем существующие категории в подкатегории SINIKON
     // Подкатегории оригинальных категорий объединяются в группы товаров
     const sinikonSubcategories: CatalogSubcategoryNormalized[] = catalogFilesData.map((fileData) => {
@@ -65,42 +127,19 @@ export function normalizeCatalogData(): CatalogCategory[] {
 
       fileData.subcategories.forEach((subcategory) => {
         subcategory.productGroups.forEach((group) => {
-          const groupSlug = group.seo_slug || generateSlug(group.groupName);
+          // Проверяем, нужно ли перенести группу в "Инструменты и крепеж"
+          if (toolsAndFastenersGroupNames.includes(group.groupName)) {
+            const transformedGroup = transformProductGroup(
+              group,
+              sinikonSlug,
+              toolsAndFastenersSubcategorySlug
+            );
+            toolsAndFastenersGroups.push(transformedGroup);
+            return; // Пропускаем эту группу в обычной обработке
+          }
 
-          // Трансформируем items в CatalogProduct
-          const items: CatalogProduct[] = group.items.map((item) => {
-            // Объединяем commonSpecs и характеристики item
-            const specs: Record<string, any> = {
-              ...group.commonSpecs,
-              ...item,
-            };
-
-            return {
-              article: item.article,
-              groupId: groupSlug,
-              categorySlug: sinikonSlug,
-              subcategorySlug,
-              groupSlug,
-              specs,
-              ...item,
-            };
-          });
-
-          allProductGroups.push({
-            id: groupSlug,
-            groupName: group.groupName,
-            slug: groupSlug,
-            categorySlug: sinikonSlug,
-            subcategorySlug,
-            commonSpecs: group.commonSpecs,
-            items,
-            descriptionShort: group.description_short,
-            descriptionFull: group.description_full,
-            seoSlug: group.seo_slug,
-            seoTitle: group.seo_title,
-            seoMetaDescription: group.seo_meta_description,
-            imageUrl: group.commonSpecs.image_url,
-          });
+          const transformedGroup = transformProductGroup(group, sinikonSlug, subcategorySlug);
+          allProductGroups.push(transformedGroup);
         });
       });
 
@@ -113,6 +152,18 @@ export function normalizeCatalogData(): CatalogCategory[] {
         productGroups: allProductGroups,
       };
     });
+
+    // Добавляем новую подкатегорию "Инструменты и крепеж"
+    if (toolsAndFastenersGroups.length > 0) {
+      sinikonSubcategories.push({
+        id: toolsAndFastenersSubcategorySlug,
+        name: 'Инструменты и крепеж',
+        slug: toolsAndFastenersSubcategorySlug,
+        categorySlug: sinikonSlug,
+        imageUrl: '/images/subcategories/instrument-i-krepezh.png',
+        productGroups: toolsAndFastenersGroups,
+      });
+    }
 
     // Создаём категорию SINIKON
     const sinikonCategory: CatalogCategory = {

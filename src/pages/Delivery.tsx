@@ -27,37 +27,35 @@ const Delivery = () => {
             <div className="space-y-4">
               <div className="border border-border rounded p-4">
                 <div className="flex items-start gap-3">
-                  <Truck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-foreground mb-1">Доставка по Саратову</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Доставка по городу в течение 24 часов
-                    </p>
-                    <p className="text-sm text-muted-foreground">Стоимость доставки уточняйте у менеджера</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border border-border rounded p-4">
-                <div className="flex items-start gap-3">
-                  <Truck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-foreground mb-1">Доставка по области</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Доставка в населённые пункты Саратовской области
-                    </p>
-                    <p className="text-sm text-muted-foreground">Стоимость доставки уточняйте у менеджера</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border border-border rounded p-4">
-                <div className="flex items-start gap-3">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Самовывоз</h3>
                     <p className="text-sm text-muted-foreground">
-                      Забрать заказ из магазина по адресу: г. Саратов, ул. Большая Горная, 290
+                      г. Саратов, ул. Большая Горная, 290
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border border-border rounded p-4">
+                <div className="flex items-start gap-3">
+                  <Truck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-medium text-foreground mb-1">Доставка по Саратову</h3>
+                    <p className="text-sm text-muted-foreground">
+                      по согласованию
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border border-border rounded p-4">
+                <div className="flex items-start gap-3">
+                  <Truck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-medium text-foreground mb-1">Отправка в регионы</h3>
+                    <p className="text-sm text-muted-foreground">
+                      транспортными компаниями
                     </p>
                   </div>
                 </div>
@@ -65,12 +63,10 @@ const Delivery = () => {
             </div>
 
             <div className="mt-6 p-4 bg-secondary rounded">
-              <h3 className="font-medium text-foreground mb-2 text-sm uppercase">Условия доставки</h3>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Доставка в рабочие дни с 10:00 до 18:00</li>
-                <li>• Подъём на этаж — уточняйте у менеджера</li>
-                <li>• Стоимость доставки рассчитывается индивидуально</li>
-              </ul>
+              <h3 className="font-medium text-foreground mb-2 text-sm uppercase">Сроки</h3>
+              <p className="text-sm text-muted-foreground">
+                Сроки зависят от объёма заказа и наличия.
+              </p>
             </div>
           </div>
 
@@ -85,7 +81,7 @@ const Delivery = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Наличные</h3>
                     <p className="text-sm text-muted-foreground">
-                      Оплата наличными при получении товара в магазине или курьеру
+                      Оплата наличными при получении товара в магазине
                     </p>
                   </div>
                 </div>
@@ -97,7 +93,7 @@ const Delivery = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Банковская карта</h3>
                     <p className="text-sm text-muted-foreground">
-                      Оплата картой Visa, MasterCard, МИР в магазине
+                      Оплата картой в магазине
                     </p>
                   </div>
                 </div>
@@ -109,7 +105,7 @@ const Delivery = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Безналичный расчёт</h3>
                     <p className="text-sm text-muted-foreground">
-                      Для юридических лиц и ИП — оплата по счёту
+                      ИП и организации
                     </p>
                   </div>
                 </div>
@@ -119,7 +115,7 @@ const Delivery = () => {
             <div className="mt-6 p-4 bg-secondary rounded">
               <h3 className="font-medium text-foreground mb-2 text-sm uppercase">Для юридических лиц</h3>
               <p className="text-sm text-muted-foreground mb-2">
-                Работаем с организациями и ИП. Предоставляем полный пакет документов.
+                Работаем с организациями и ИП. Предоставляется полный комплект закрывающих документов.
               </p>
               <a href="tel:+78452477477" className="text-sm text-primary hover:underline">
                 Позвоните для оформления: 8 (8452) 47-74-77

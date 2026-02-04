@@ -23,9 +23,9 @@ export function CategoryCard({ id, name, icon }: CategoryCardProps) {
   return (
     <Link
       to={`/catalog?category=${id}`}
-      className="category-card flex flex-col items-center"
+      className="category-card flex flex-col items-center bg-white"
     >
-      <div className="w-full aspect-square flex items-center justify-center bg-muted/50 rounded mb-3">
+      <div className="w-full aspect-square flex items-center justify-center bg-white rounded mb-3">
         <IconComponent className="h-16 w-16 text-muted-foreground" strokeWidth={1} />
       </div>
       <h3 className="category-card-title">{name}</h3>
