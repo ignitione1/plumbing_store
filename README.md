@@ -150,15 +150,6 @@ VITE_SITE_URL=https://your-domain.com
 
 ## 🌐 Развертывание
 
-### Vercel (рекомендуется)
-```bash
-# Установка Vercel CLI
-npm i -g vercel
-
-# Развертывание
-vercel --prod
-```
-
 ### Docker
 ```bash
 # Сборка Docker образа
@@ -166,14 +157,6 @@ docker build -t plumbing-store .
 
 # Запуск контейнера
 docker run -p 3000:3000 plumbing-store
-```
-
-### Статический хостинг
-```bash
-# Сборка статических файлов
-npm run build
-
-# Развертывание папки dist
 ```
 
 ## 📈 Будущие улучшения
@@ -186,31 +169,6 @@ npm run build
 - [ ] 🌍 Мультиязычность
 - [ ] 📱 Мобильное приложение
 
-## 🤝 Вклад
-
-Contributions приветствуются! Пожалуйста, создайте Issue для обсуждения изменений или Pull Request для внесения улучшений.
-
-### Разработка
-```bash
-# Создание новой ветки
-git checkout -b feature/amazing-feature
-
-# Внесение изменений
-git commit -m 'feat: add amazing feature'
-
-# Отправка изменений
-git push origin feature/amazing-feature
-```
-
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT. Подробности в файле [LICENSE](LICENSE).
-
-## 👥 Команда
-
-- **Разработка** — [Vitaly Revyakin]
-- **Дизайн** — [Vitaly Revyakin]
-- **Контент** — [Vitaly Revyakin]
 
 ## 📞 Контакты
 
